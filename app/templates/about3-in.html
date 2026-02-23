@@ -1,0 +1,121 @@
+{% include 'blocks/header.html' %}
+
+<section class="container">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="font-light">
+      <div class="flex gap-x-10.75">
+        <img src="./static/imgs/mocks/4.png" alt="" class="object-cover aspect-square w-82.5 shrink-0 bg-white rounded-sm" />
+
+        <div>
+          <span class="mb-8.25 text-sm font-medium">Родился 3 фев 1963, д. Саитово, Мензелинский район, ТАССР</span>
+
+          <h1 class="text-page-header font-semibold mb-6.25">Шайхразиев Василь Габтелгаязович</h1>
+
+          <div class="bg-accent h-px w-17.5 mb-7.25"></div>
+
+          <ul class="space-y-2.5 font-medium">
+            <li>Заместитель Премьер-министра Республики Татарстан</li>
+            <li>Председатель Национального Совета Всемирного конгресса татар</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-px bg-black/10 mt-12 mb-10"></div>
+
+      <p class="text-xl mb-15">
+        30 июля-2 августа 2022 года состоялся VIII съезд Всемирного конгресса татар.
+        На пленарном заседании съезда заместитель Премьер-Министра Республики Татарстан
+        Василь Габтелгаязович Шайхразиев единогласно избран председателем
+        Национального совета на второй срок.
+      </p>
+
+      <h3 class="font-semibold text-3xl -tracking-4 mb-7.5">Образование</h3>
+      <ul class="text-xl space-y-7.5 mb-15">
+        <li class="relative flex">
+          <span class="w-40 border-t pt-4.5 border-accent font-semibold">1990</span>
+          <p class="pt-4.5 border-t border-black/10">В 1990 году окончил Высшую юридическую заочную школу МВД СССР, по специальности «Правоведение», юрист.</p>
+        </li>
+      </ul>
+
+      <h3 class="font-semibold text-3xl -tracking-4 mb-7.5">Трудовая деятельность</h3>
+      <ul class="text-xl space-y-7.5 mb-15">
+        <li class="relative flex">
+          <span class="w-40 border-t pt-4.5 border-accent font-semibold">1980 - 1981</span>
+          <p class="pt-4.5 border-t border-black/10">Работа монтером подкрановых путей УМС УС «Автозаводстрой»,
+            город Набережные Челны.</p>
+        </li>
+        <li class="relative flex">
+          <span class="w-40 border-t pt-4.5 border-accent font-semibold">1980 - 1981</span>
+          <p class="pt-4.5 border-t border-black/10">Служба по призыву в пограничных войсках КГБ СССР, г.Биробиджан ЕАО.</p>
+        </li>
+      </ul>
+
+      <h3 class="font-semibold text-3xl -tracking-4 mb-7.5">Награды</h3>
+      <ul class="text-xl space-y-7.5 mb-15">
+        <li class="relative flex">
+          <span class="w-40 border-t pt-4.5 border-accent font-semibold">2025</span>
+          <p class="pt-4.5 border-t border-black/10">Почетный знак «За труд во благо земли Самарской»</p>
+        </li>
+        <li class="relative flex">
+          <span class="w-40 border-t pt-4.5 border-accent font-semibold">2025</span>
+          <p class="pt-4.5 border-t border-black/10">Орден «Александра Невского»</p>
+        </li>
+      </ul>
+
+      <h3 class="font-semibold text-3xl -tracking-4 mb-7.5">Контакты</h3>
+
+      <div class="border-t border-black/10 pt-7 flex justify-between">
+        <a href="mailto:pr.shayhraziev@tatar.ru" class="flex flex-col leading-[1.4]">
+          <p class="mb-0.5 text-sm font-medium">Электронная почта</p>
+          <p class="font-semibold">pr.shayhraziev@tatar.ru</p>
+        </a>
+
+        <div class="flex gap-x-2.5">
+          <a href="#" rel="nofollow" target="_blank" class="bg-black rounded-full size-12.5 grid place-content-center">
+            <img src="./static/imgs/icons/social/tg.svg" alt="" width="18" height="18" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-black rounded-full size-12.5 grid place-content-center">
+            <img src="./static/imgs/icons/social/wa.svg" alt="" width="18" height="18" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-black rounded-full size-12.5 grid place-content-center">
+            <img src="./static/imgs/icons/social/vk.svg" alt="" width="18" height="18" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-black rounded-full size-12.5 grid place-content-center">
+            <img src="./static/imgs/icons/social/max.svg" alt="" width="18" height="18" />
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-30 space-y-17.5">
+        {% for _ in range(3) %}
+        <a href="#" class="leading-[1.4] grid grid-cols-[240px_1fr] gap-x-2.5">
+          <img src="./static/imgs/mocks/4.png" alt="" class="shrink-0 object-cover aspect-square bg-white rounded-sm" />
+
+          <div>
+            <div class="bg-white rounded-sm p-7.5 pt-6.75 pr-11 relative">
+              <p class="text-[26px] font-semibold mb-4.25">Шакиров Данис Фанисович</p>
+              <p class="pr-10 text-lg leading-[1.4] font-medium">
+                Первый заместитель председателя — руководитель<br/> исполнительного комитета Всемирного конгресса татар
+              </p>
+
+              <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="absolute bottom-7.5 right-7.5" />
+            </div>
+
+            <p class="relative pl-13.25 mb-5.75 mt-6.75 font-semibold before:absolute before:size-2.75 before:rounded-sm before:bg-accent before:top-1.5 before:left-7.5">
+              Депутат Государственного Совета Республики Татарстан
+            </p>
+          </div>
+        </a>
+        {% endfor %}
+
+        <button class="show-more-btn text-xs!">Загрузить больше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/footer.html' %}

@@ -1,0 +1,43 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div>
+      <h1 class="text-page-header mb-14.5">Руководство и аппарат всемирного конгресса татар</h1>
+
+      <div class="space-y-17.5">
+        {% for _ in range(3) %}
+        <a href="#" class="grid grid-cols-[240px_1fr] gap-x-2.5">
+          <img src="./static/imgs/mocks/4.png" alt="" class="object-cover aspect-square shrink-0 bg-white rounded-sm" />
+
+          <div class="relative p-7.5 bg-white">
+            <div class="bg-accent h-px absolute left-0 top-20 w-17.5"></div>
+            <p class="font-semibold text-[26px] leading-[1.4]">Шайхразиев Василь Габтелгаязович</p>
+
+            <ul class="mt-7 space-y-2.5 font-medium pr-13.5">
+              <li>Заместитель Премьер-министра Республики Татарстан</li>
+              <li>Председатель Национального Совета Всемирного конгресса татар</li>
+            </ul>
+
+            <p class="text-xs text-thumb-button font-medium mt-10 pr-15">Родился 3 фев 1963, д. Саитово, Мензелинский район, ТАССР</p>
+
+            <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="absolute bottom-7.5 right-7.5" />
+          </div>
+        </a>
+        {% endfor %}
+
+        <button class="show-more-btn bg-white text-xs!">Загрузить больше</button>
+      </div>
+
+      <button class="mt-17.5 show-more-btn-accent">Национальный совет (Милли Шура) всемирного конгресса татар</button>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}

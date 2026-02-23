@@ -32,6 +32,10 @@ input {
     @apply bg-white text-center w-full text-sm font-semibold h-12.5 grid place-items-center;
 }
 
+.show-more-btn-accent {
+    @apply bg-accent text-white font-semibold flex items-center justify-center h-15 w-full rounded-sm;
+}
+
 .status {
     font-weight: 600;
     padding: 0 8px;
