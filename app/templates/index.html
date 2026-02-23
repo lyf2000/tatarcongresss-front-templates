@@ -1,1 +1,574 @@
-blaaaah
+{% include 'blocks/header.html' %}
+
+<section class="mb-10 lg:mb-15 text-white container grid sm:grid-cols-2 gap-5">
+  <a href="#" class="max-lg:col-span-full lg:row-span-2 relative sm:max-lg:aspect-video max-sm:-mx-4.25">
+    <div class="sm:rounded-sm relative overflow-hidden w-full sm:size-full">
+      <div class="z-1 size-full absolute max-sm:hidden from-black/10 to-black/60 bg-linear-to-b"></div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="size-full object-cover" />
+    </div>
+
+    <div class="max-sm:text-black sm:absolute sm:left-7.5 sm:bottom-7.75 sm:right-7.5 z-2 pb-0 p-4 sm:p-0">
+      <div class="mb-4 sm:mb-6 flex justify-between text-xs">
+        <p class="max-sm:text-accent uppercase">
+          <span class="font-bold">Новость</span> · Анонс
+        </p>
+
+        <p>Сегодня 13:40</p>
+      </div>
+      <p class="sm:pr-29 -tracking-2 text-lg sm:text-2xl font-bold">Васил Гаязович провел рабочую встречу с главой Якутии Айсеном Николаевым по вопросу дальнейшего сотрудничества</p>
+    </div>
+
+    <img src="./static/imgs/icons/arrow-up-right.svg" alt="" class="max-sm:hidden absolute size-12.5 bottom-4 right-4 z-2" />
+  </a>
+
+  <a href="#" class="text-tiny flex flex-col lg:flex-row-reverse items-stretch bg-accent rounded-sm">
+    <img src="./static/imgs/mocks/1.png" alt="" class="w-full aspect-356/218 lg:w-1/2 xl:w-82 rounded-sm shrink-0 object-cover" />
+
+    <div class="p-4 lg:px-7.5 lg:py-5.5 flex flex-col min-w-0">
+      <p class="uppercase">
+        <span class="font-bold">Новость</span> · Анонс
+      </p>
+
+      <div class="grow">
+        <p class="-tracking-2 font-bold lg:line-clamp-4 text-base lg:text-lg mt-3 mb-4.5">Вы этого ждали и мы тоже! Уже совсем скоро стартует всемирная образовательная акция «Татарча диктант»!</p>
+      </div>
+
+      <p>16 часов назад</p>
+    </div>
+  </a>
+
+  <a href="#" class="text-tiny flex flex-col lg:flex-row-reverse items-stretch bg-white rounded-sm">
+    <img src="./static/imgs/mocks/1.png" alt="" class="w-full aspect-356/218 lg:w-1/2 xl:w-82 rounded-sm shrink-0 object-cover" />
+
+    <div class="p-4 lg:px-7.5 lg:py-5.5 flex flex-col min-w-0">
+      <p class="uppercase text-accent">
+        <span class="font-bold">Новость</span> · Анонс
+      </p>
+
+      <div class="grow">
+        <p class="-tracking-2 font-bold text-black lg:line-clamp-4 text-base lg:text-lg mt-3 mb-4.5">Республиканский конкурс «Татар кызы 2026» объявляет старт муниципальных и зональных этапов!</p>
+      </div>
+
+      <p class="text-thumb-button">16 часов назад</p>
+    </div>
+  </a>
+</section>
+
+<section class="mb-10 lg:mb-12.5 container grid md:grid-cols-3 xl:grid-cols-4 gap-5">
+  <a href="#" class="flex items-start xl:items-center gap-x-4">
+      <span class="rounded-full border border-accent shrink-0 p-1.25 size-22.5 bg-white">
+        <img src="./static/imgs/mocks/2.png" alt="" class="size-full object-cover rounded-fulll" />
+      </span>
+
+    <div>
+      <span class="max-md:mt-1.25 status bg-white">ВИДЕО</span>
+
+      <p class="mt-1.5 font-bold text-sm">
+        Интервью с чемпионом России – Михаилом Кокляевым
+      </p>
+    </div>
+  </a>
+  <a href="#" class="flex items-start xl:items-center gap-x-4">
+      <span class="rounded-full border border-accent shrink-0 p-1.25 size-22.5 bg-white">
+        <img src="./static/imgs/mocks/2.png" alt="" class="size-full object-cover rounded-fulll" />
+      </span>
+
+    <div>
+      <span class="max-md:mt-1.25 status bg-white">ВИДЕО</span>
+
+      <p class="mt-1.5 font-bold text-sm">
+        Интервью с чемпионом России – Михаилом Кокляевым
+      </p>
+    </div>
+  </a>
+  <a href="#" class="flex items-start xl:items-center gap-x-4">
+      <span class="rounded-full border border-accent shrink-0 p-1.25 size-22.5 bg-white">
+        <img src="./static/imgs/mocks/2.png" alt="" class="size-full object-cover rounded-fulll" />
+      </span>
+
+    <div>
+      <span class="max-md:mt-1.25 status bg-white">ВИДЕО</span>
+
+      <p class="mt-1.5 font-bold text-sm">
+        Интервью с чемпионом России – Михаилом Кокляевым
+      </p>
+    </div>
+  </a>
+  <a href="#" class="max-xl:hidden flex items-center gap-x-4">
+      <span class="rounded-full border border-accent shrink-0 p-1.25 size-22.5 bg-white">
+        <img src="./static/imgs/mocks/2.png" alt="" class="size-full object-cover rounded-fulll" />
+      </span>
+
+    <div>
+      <span class="status bg-white">ВИДЕО</span>
+
+      <p class="mt-1.5 font-bold text-sm">
+        Интервью с чемпионом России – Михаилом Кокляевым
+      </p>
+    </div>
+  </a>
+</section>
+
+<section class="container mb-10 lg:mb-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div class="mb-7.5 min-w-0 col-span-full relative">
+    <div class="flex xl:justify-center no-scrollbar overflow-x-auto text-base gap-x-5 lg:text-xl xl:text-3xl font-light -tracking-4 xl:gap-x-10 text-thumb-button whitespace-nowrap">
+      <button class="pb-4.25 text-black border-b border-accent">Все новости</button>
+      <button class="pb-4.25">Культура</button>
+      <button class="pb-4.25">Политика</button>
+      <button class="pb-4.25">Молодёжь</button>
+      <button class="pb-4.25">Религия</button>
+      <button class="pb-4.25">В мире</button>
+    </div>
+
+    <div class="absolute inset-x-0 bottom-0 h-px bg-thumb-button -z-1"></div>
+  </div>
+
+  <a href="#" class="text-tiny rounded-sm flex flex-col bg-white">
+    <img src="./static/imgs/mocks/1.png" alt="" class="object-cover rounded-sm aspect-video sm:h-50" />
+
+    <div class="p-4 xl:px-7.5 xl:pt-5.5 xl:pb-5.25 grow flex flex-col">
+      <p class="text-accent uppercase">
+        <span class="font-bold">Новость</span> · Политика
+      </p>
+      <p class="-tracking-2 mt-3.25 mb-1 line-clamp-5 font-bold text-base grow">
+        Раскрой свой потенциал: в Татарстане стартует премия «Студент года Республики Татарстан — 2025»
+      </p>
+      <p class="text-thumb-button">2 дня назад</p>
+    </div>
+  </a>
+
+  <a href="#" class="text-tiny rounded-sm flex flex-col bg-white">
+    <img src="./static/imgs/mocks/1.png" alt="" class="object-cover rounded-sm aspect-video sm:h-50" />
+
+    <div class="p-4 xl:px-7.5 xl:pt-5.5 xl:pb-5.25 grow flex flex-col">
+      <p class="text-accent uppercase">
+        <span class="font-bold">Новость</span> · Политика
+      </p>
+      <p class="-tracking-2 mt-3.25 mb-1 line-clamp-5 font-bold text-base grow">
+        Активистка РНКАТНО, Динара Юсипова – участница IV Межнационального молодёжного форума «ЭтноСМАРТ»
+      </p>
+      <p class="text-thumb-button">2 дня назад</p>
+    </div>
+  </a>
+
+  <div class="sm:col-span-2 divide-y divide-grey bg-white rounded-sm grid grid-rows-3">
+    <a href="#" class="pr-0.5 py-1 pl-3.5 xl:pl-8 first:pt-0.5 last:pb-0.5 flex gap-x-4.5">
+      <div class="grow py-3.5 xl:py-4.75">
+        <div class="flex justify-between text-tiny ">
+          <p class="text-accent uppercase">
+            <span class="font-bold">Новость</span> · Политика
+          </p>
+          <span class="text-thumb-button">2 дня назад</span>
+        </div>
+        <p class="-tracking-2 font-bold mt-2.75">
+          Молодежь Татарской национально-культурной автономии Пензенской области отмечена наградами
+          за вклад в развитие «Движения первых»
+        </p>
+      </div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="object-cover size-25 xl:size-31.5 rounded-xs shrink-0" />
+    </a>
+
+    <a href="#" class="pr-0.5 py-1 pl-3.5 xl:pl-8 first:pt-0.5 last:pb-0.5 flex gap-x-4.5">
+      <div class="grow py-3.5 xl:py-4.75">
+        <div class="flex justify-between text-tiny ">
+          <p class="text-accent uppercase">
+            <span class="font-bold">Новость</span> · Политика
+          </p>
+          <span class="text-thumb-button">2 дня назад</span>
+        </div>
+        <p class="-tracking-2 font-bold mt-2.75">
+          В Казани стартовал Форум преподавателей мусульманских образовательных организаций
+        </p>
+      </div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="object-cover size-25 xl:size-31.5 rounded-xs shrink-0" />
+    </a>
+
+    <a href="#" class="pr-0.5 py-1 pl-3.5 xl:pl-8 first:pt-0.5 last:pb-0.5 flex gap-x-4.5">
+      <div class="grow py-3.5 xl:py-4.75">
+        <div class="flex justify-between text-tiny ">
+          <p class="text-accent uppercase">
+            <span class="font-bold">Новость</span> · Политика
+          </p>
+          <span class="text-thumb-button">2 дня назад</span>
+        </div>
+        <p class="-tracking-2 font-bold mt-2.75">
+          «Десант» татарских хазратов выехал в районы Татарстана с лекциями об исламе и нравственности
+        </p>
+      </div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="object-cover size-25 xl:size-31.5 rounded-xs shrink-0" />
+    </a>
+  </div>
+
+  <a href="#" class="show-more-btn col-span-full">Смотреть все новости</a>
+</section>
+
+<section class="container mb-10 lg:mb-12.5 grid md:grid-cols-2 gap-5">
+  <div class="relative bg-white rounded-sm overflow-hidden">
+    <div class="absolute top-1/2 -left-7 xl:left-6 -translate-y-1/2 bg-white2 rounded-full size-35 xl:size-74.5 p-2.75 xl:p-6.25">
+      <img src="./static/imgs/mocks/3.png" alt="" class="size-full rounded-full object-cover" />
+    </div>
+
+    <div class="pl-31 xl:pl-87 pt-5 pb-5.5 pr-4.5 flex flex-col items-start">
+      <span class="mb-4.5 bg-accent status text-white">ПЕРСОНА</span>
+
+      <p class="mb-2.25 font-bold -tracking-2">Поздравляем Давлятова Ильдуса Ядкаровича с днем рождения!</p>
+
+      <p class="mb-2.75 text-xs text-thumb-button">Родился 20 декабря 1969 года</p>
+
+      <p class="text-xs">Депутат Законодательного Собрания Оренбургской области 6 созыва, кандидат сельскохозяйственных наук.</p>
+    </div>
+  </div>
+  <div class="max-md:hidden relative bg-white rounded-sm overflow-hidden">
+    <div class="absolute top-1/2 -left-7 xl:left-6 -translate-y-1/2 bg-white2 rounded-full size-35 xl:size-74.5 p-2.75 xl:p-6.25">
+      <img src="./static/imgs/mocks/3.png" alt="" class="size-full rounded-full object-cover" />
+    </div>
+
+    <div class="pl-31 xl:pl-87 pt-5 pb-5.5 pr-4.5 flex flex-col items-start">
+      <span class="mb-4.5 bg-accent status text-white">ПЕРСОНА</span>
+
+      <p class="mb-2.25 font-bold -tracking-2">Поздравляем Давлятова Ильдуса Ядкаровича с днем рождения!</p>
+
+      <p class="mb-2.75 text-xs text-thumb-button">Родился 20 декабря 1969 года</p>
+
+      <p class="text-xs">Депутат Законодательного Собрания Оренбургской области 6 созыва, кандидат сельскохозяйственных наук.</p>
+    </div>
+  </div>
+</section>
+
+<section class="embla container mb-10 lg:mb-12.5 relative">
+  <div class="flex justify-between items-center mb-6.75 min-h-5">
+    <h4 class="sm:text-3xl sm:font-light">Медиа конгресса</h4>
+
+    <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
+      <button class="embla__prev flex items-center justify-center aspect-square">
+        <img src="./static/imgs/icons/slider-arrow-left.svg" alt="" width="20" height="20" />
+      </button>
+      <button class="embla__next flex items-center justify-center aspect-square bg-white rounded-sm">
+        <img src="./static/imgs/icons/slider-arrow-right.svg" alt="" width="20" height="20" />
+      </button>
+    </div>
+  </div>
+
+  <div class="embla__viewport">
+    <div class="embla__container">
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-5 flex justify-center gap-x-2.5 embla__dots max-sm:absolute max-sm:right-4.25 max-sm:top-1.5 max-sm:mt-0"></div>
+
+  <script type="text/template" id="embla-dot-template">
+    <button class="embla__dot"></button>
+  </script>
+
+  <a href="#" class="show-more-btn bg-white mt-5">Все медиа материалы</a>
+</section>
+
+<section class="container mb-10 lg:mb-17.5 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+  <div class="mb-7.5 min-w-0 col-span-full relative">
+    <div class="flex xl:justify-center no-scrollbar overflow-x-auto text-base gap-x-5 lg:text-xl xl:text-3xl font-light -tracking-4 xl:gap-x-10 text-thumb-button whitespace-nowrap">
+      <button class="pb-4.25 text-black border-b border-accent">Все новости</button>
+      <button class="pb-4.25">Культура</button>
+      <button class="pb-4.25">Политика</button>
+      <button class="pb-4.25">Молодёжь</button>
+      <button class="pb-4.25">Религия</button>
+      <button class="pb-4.25">В мире</button>
+    </div>
+
+    <div class="absolute inset-x-0 bottom-0 h-px bg-thumb-button -z-1"></div>
+  </div>
+
+  <a href="#" class="flex flex-col gap-2.5 lg:gap-5">
+    <div class="overflow-hidden rounded-sm relative">
+      <div class="bg-linear-to-b from-black/10 to-black/60 absolute size-full z-1"></div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="size-fit object-cover" />
+
+      <div class="absolute z-2 inset-x-7.5 bottom-7.5 text-white text-tiny font-medium flex items-end gap-x-2 justify-between">
+        <div>
+          <p class="mb-4.5 text-2xl font-bold -tracking-2">Мин татарча сөйләшәм</p>
+          <p>
+            <span class="font-bold">Проект</span> · Активный
+          </p>
+        </div>
+
+        <img src="./static/imgs/mocks/1.svg" alt="" width="88" height="88" />
+      </div>
+    </div>
+
+    <div class="flex gap-7.5 items-center text-tiny">
+      <button class="text-white rounded-sm bg-accent grid place-items-center h-12.5 w-27.5 font-semibold text-xs">Участвовать</button>
+
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">25 000</p>
+        <p>Участников</p>
+      </div>
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">86</p>
+        <p>Городов мира</p>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="flex flex-col gap-2.5 lg:gap-5">
+    <div class="overflow-hidden rounded-sm relative">
+      <div class="bg-linear-to-b from-black/10 to-black/60 absolute size-full z-1"></div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="size-fit object-cover" />
+
+      <div class="absolute z-2 inset-x-7.5 bottom-7.5 text-white text-tiny font-medium flex items-end gap-x-2 justify-between">
+        <div>
+          <p class="mb-4.5 text-2xl font-bold -tracking-2">Мин татарча сөйләшәм</p>
+          <p>
+            <span class="font-bold">Проект</span> · Активный
+          </p>
+        </div>
+
+        <img src="./static/imgs/mocks/1.svg" alt="" width="88" height="88" />
+      </div>
+    </div>
+
+    <div class="flex gap-7.5 items-center text-tiny">
+      <button class="text-white rounded-sm bg-accent grid place-items-center h-12.5 w-27.5 font-semibold text-xs">Участвовать</button>
+
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">25 000</p>
+        <p>Участников</p>
+      </div>
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">86</p>
+        <p>Городов мира</p>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="flex flex-col gap-2.5 lg:gap-5">
+    <div class="overflow-hidden rounded-sm relative">
+      <div class="bg-linear-to-b from-black/10 to-black/60 absolute size-full z-1"></div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="size-fit object-cover" />
+
+      <div class="absolute z-2 inset-x-7.5 bottom-7.5 text-white text-tiny font-medium flex items-end gap-x-2 justify-between">
+        <div>
+          <p class="mb-4.5 text-2xl font-bold -tracking-2">Мин татарча сөйләшәм</p>
+          <p>
+            <span class="font-bold">Проект</span> · Активный
+          </p>
+        </div>
+
+        <img src="./static/imgs/mocks/1.svg" alt="" width="88" height="88" />
+      </div>
+    </div>
+
+    <div class="flex gap-7.5 items-center text-tiny">
+      <button class="text-white rounded-sm bg-accent grid place-items-center h-12.5 w-27.5 font-semibold text-xs">Участвовать</button>
+
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">25 000</p>
+        <p>Участников</p>
+      </div>
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">86</p>
+        <p>Городов мира</p>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="flex-col gap-2.5 lg:gap-5 hidden md:max-lg:flex">
+    <div class="overflow-hidden rounded-sm relative">
+      <div class="bg-linear-to-b from-black/10 to-black/60 absolute size-full z-1"></div>
+      <img src="./static/imgs/mocks/1.png" alt="" class="size-fit object-cover" />
+
+      <div class="absolute z-2 inset-x-7.5 bottom-7.5 text-white text-tiny font-medium flex items-end gap-x-2 justify-between">
+        <div>
+          <p class="mb-4.5 text-2xl font-bold -tracking-2">Мин татарча сөйләшәм</p>
+          <p>
+            <span class="font-bold">Проект</span> · Активный
+          </p>
+        </div>
+
+        <img src="./static/imgs/mocks/1.svg" alt="" width="88" height="88" />
+      </div>
+    </div>
+
+    <div class="flex gap-7.5 items-center text-tiny">
+      <button class="text-white rounded-sm bg-accent grid place-items-center h-12.5 w-27.5 font-semibold text-xs">Участвовать</button>
+
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">25 000</p>
+        <p>Участников</p>
+      </div>
+      <div>
+        <p class="text-lg mb-0.75 font-bold -tracking-2">86</p>
+        <p>Городов мира</p>
+      </div>
+    </div>
+  </a>
+
+  <a href="#" class="show-more-btn col-span-full">Все проекты конгресса</a>
+</section>
+
+<section class="container grid" id="map-section">
+  <div class="lg:w-111 right-sidebar lg:justify-self-end bg-white rounded-sm lg:h-177.5 lg:pb-7.5 lg:pr-7.5 flex flex-col">
+    <div class="mb-7 lg:mb-6 p-3.5 pb-0! lg:p-7.5 max-md:pt-5.5 lg:pr-0">
+      <p class="font-medium md:font-light text-base md:text-3xl mb-5">
+        Карта организаций<br class="md:hidden"/>
+        и представительств
+      </p>
+
+      <form class="grow flex items-center relative border-b border-grey gap-x-2.5">
+        <button type="submit" class="absolute left-0 top-0">
+          <img src="./static/imgs/icons/loop.svg" alt="">
+        </button>
+
+        <input type="text" placeholder="Город, страна..." class="pb-2.5 pl-7 placeholder:text-black text-xs w-full"/>
+      </form>
+    </div>
+
+    <div data-simplebar class="max-lg:hidden pr-5 pl-7.5 min-h-0 h-full">
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+      <a href="#" class="group after:absolute after:inset-x-0 after:bottom-0 after:bg-grey after:h-px last:after:hidden flex items-center z-1 gap-x-2.5 py-6 pr-2.5 text-tiny relative before:absolute before:inset-y-0 before:-left-4 before:right-0 before:bg-grey2 before:rounded-sm before:opacity-0 hover:before:opacity-100 before:-z-1">
+        <div class="grow">
+          <p class="mb-2.5 text-accent uppercase font-medium"><span class="font-bold">Берлин</span> · германия</p>
+          <p class="mb-2 font-bold -tracking-2">Представительство Всемирного Конгресса Татар в Германии</p>
+          <p class="text-thumb-button">Dorotheenstraße 30, 10117 Berlin, Германия</p>
+        </div>
+
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="opacity-50 group-hover:opacity-100" />
+      </a>
+    </div>
+  </div>
+
+  <div class="map bg-white rounded-r-sm"></div>
+
+  <button class="lg:w-111! lg:justify-self-end mt-5 lg:mt-2.5 show-more-btn rounded-sm">Все организации и представительства</button>
+</section>
+
+{% include 'blocks/footer.html' %}

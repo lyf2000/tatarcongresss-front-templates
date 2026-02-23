@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "./custom.css";
+@import "./fonts.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./simplebar.css";
+@import "./map.css";
+
+@theme {
+    --color-grey: #EFEFEF;
+    --color-grey2: #F6F6F6;
+    --color-accent: #E89702;
+    --color-thumb-button: #B3B3B3;
+    --color-white2: #F1F1F1;
+
+    --text-tiny: 10px;
+    --text-tiny--line-height: 1.2;
+    --text-xs--line-height: 1.2;
+    --text-sm--line-height: 1.2;
+    --text-base--line-height: 1.2;
+    --text-lg--line-height: 1.2;
+    --text-xl--line-height: 1.2;
+    --text-2xl--line-height: 1.2;
+    --text-3xl--line-height: 1.2;
+    --text-4xl--line-height: 1.2;
+
+    --tracking-2: 2%;
+    --tracking-4: 4%;
+}

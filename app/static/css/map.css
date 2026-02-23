@@ -1,0 +1,28 @@
+#map-section {
+    .right-sidebar {
+        anchor-name: --right-sidebar;
+    }
+
+    .map {
+        position: absolute;
+        top: anchor(--right-sidebar top);
+        bottom: calc(anchor(--right-sidebar bottom) - 60px);
+        left: 0;
+        right: calc(anchor(--right-sidebar left) + 20px);
+        background: red;
+    }
+}
+
+@media (width < 1024px) {
+    #map-section {
+        .map {
+            border-radius: 4px;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 500px;
+        }
+    }
+}

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="./static/css/output.css">
+  <title></title>
+
+  <noscript>
+    <style>
+        .simplebar-content-wrapper {
+            scrollbar-width: auto;
+            -ms-overflow-style: auto;
+        }
+
+        .simplebar-content-wrapper::-webkit-scrollbar,
+        .simplebar-hide-scrollbar::-webkit-scrollbar {
+            display: initial;
+            width: initial;
+            height: initial;
+        }
+    </style>
+  </noscript>
+</head>
+<body class="flex flex-col">
+<header id="app-header" class="bg-white py-3.5 lg:py-2 xl:pt-2.5 xl:pb-8.25 lg:mb-5">
+  <div class="container flex">
+    <div class="left-side flex max-lg:flex-row-reverse max-lg:justify-between gap-x-4">
+      <button class="burger shrink-0 self-center flex items-center justify-center">
+        <span></span>
+      </button>
+
+      <a href="/" class="logo lg:hidden max-w-full">
+        <img src="./static/imgs/logo-mobile.svg" alt=""/>
+      </a>
+
+      <a href="/" class="hidden lg:flex logo items-center lg:items-start uppercase gap-x-4">
+        <img src="./static/imgs/logo.svg" alt="" width="96" height="95" class="w-10 lg:w-18 xl:w-24"/>
+
+        <span class="flex lg:flex-col">
+            <span class="text-xs xl:text-base font-semibold lg:mt-2.75">БӨТЕНДӨНЬЯ<br/>ТАТАР КОНГРЕССЫ</span>
+
+            <span class="flex flex-col lg:mt-1.5 xl:mt-2.75 max-lg:ml-3.25">
+              <span class="text-tiny xl:text-xs mb-1 lg:mb-2 xl:mb-3">Всемирный Конгресс Татар</span>
+              <span class="text-tiny xl:text-xs">World congress of the Tatars</span>
+            </span>
+          </span>
+      </a>
+    </div>
+
+    <div class="form max-lg:pt-3.75 flex flex-col lg:flex-row lg:items-center gap-x-6 text-xs">
+      <form class="grow flex items-center relative border-b border-grey gap-x-2.5">
+        <button type="submit" class="absolute left-0 top-0">
+          <img src="./static/imgs/icons/loop.svg" alt="">
+        </button>
+        <input type="text" placeholder="Найти на сайте" class="pb-2.5 pl-7 placeholder:text-black text-xs w-full"/>
+      </form>
+
+      <div class="flex max-lg:text-tiny items-center gap-x-2.5 max-lg:mt-4.5">
+        <a href="#" class="flex items-center text-thumb-button gap-x-1.5">
+          <img src="./static/imgs/icons/calendar.svg" alt="" width="18" height="18"/>
+          <span>План работы конгресса</span>
+        </a>
+
+        <button class="flex items-center text-thumb-button gap-x-1.5">
+          <img src="./static/imgs/icons/globe.svg" alt="" width="18" height="18"/>
+          <span>Русский</span>
+        </button>
+
+        <div class="h-15 xl:h-17.5 ml-auto">
+          <img src="./static/imgs/tukay-year.png" alt="" class="h-full"/>
+        </div>
+      </div>
+    </div>
+
+    <ul class="font-semibold flex justify-between mt-5 lg:mt-5.75 menu max-lg:divide-y divide-grey">
+      <li>
+        <a href="#">
+          <span>О конгрессе</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li><a href="#">Об организации</a></li>
+          <li><a href="#">История ВКТ</a></li>
+          <li><a href="#">Руководство и аппарат</a></li>
+          <li><a href="#">Милли шура</a></li>
+          <li><a href="#">Общественные организации</a></li>
+          <li><a href="#">Стратегия действий</a></li>
+          <li><a href="#">План работы конгресса</a></li>
+          <li><a href="#">Документы</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span>Новости</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li><a href="#">Все новости</a></li>
+          <li><a href="#">Интервью и мнения</a></li>
+          <li><a href="#">СМИ о нас</a></li>
+          <li><a href="#">Пресс-релизы</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span>Проекты</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li><a href="#">Проекты конгресса</a></li>
+          <li><a href="#">Съезды и форумы</a></li>
+          <li><a href="#">Конкурсы</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Фестивали</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span>Медиа</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li><a href="#">Студия «Дөнья»</a></li>
+          <li><a href="#">Газета «Халкым минем»</a></li>
+          <li><a href="#">Журнал «Туган җир»</a></li>
+          <li><a href="#">Фотоальбомы</a></li>
+          <li><a href="#">Видеоархив</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span>Организация</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li>
+            <a href="#">
+              <span>Татарские организации в России</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Татарские организации в регионах России</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Татарские организации зарубежом</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Художественные коллективы</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Национальные учебные заведения</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Татарские СМИ в регионах России</span>
+              <span class="thumb">178</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <span>Национальная жизнь</span>
+          <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+        </a>
+
+        <ul>
+          <li><a href="#"><span>История</span></a></li>
+          <li><a href="#"><span>Культура</span></a></li>
+          <li><a href="#"><span>Образование</span></a></li>
+          <li><a href="#"><span>Личности</span></a></li>
+          <li><a href="#"><span>Наука</span></a></li>
+          <li><a href="#"><span>Религия</span></a></li>
+          <li><a href="#"><span>Политика</span></a></li>
+          <li><a href="#"><span>Права человека</span></a></li>
+          <li><a href="#"><span>Предпринимательство</span></a></li>
+          <li><a href="#"><span>Художественные коллективы</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <div id="mobile-menu" class="pt-7.5">
+      <div class="form flex flex-col lg:flex-row lg:items-center gap-x-6 text-xs">
+        <form class="grow flex items-center relative border-b border-grey gap-x-2.5">
+          <button type="submit" class="absolute left-0 top-0">
+            <img src="./static/imgs/icons/loop.svg" alt="">
+          </button>
+          <input type="text" placeholder="Найти на сайте" class="pb-2.5 pl-7 placeholder:text-black text-xs w-full"/>
+        </form>
+
+        <div class="flex max-lg:text-tiny items-center gap-x-2.5 max-lg:mt-4.5">
+          <a href="#" class="flex items-center text-thumb-button gap-x-1.5">
+            <img src="./static/imgs/icons/calendar.svg" alt="" width="18" height="18"/>
+            <span>План работы конгресса</span>
+          </a>
+
+          <button class="flex items-center text-thumb-button gap-x-1.5">
+            <img src="./static/imgs/icons/globe.svg" alt="" width="18" height="18"/>
+            <span>Русский</span>
+          </button>
+
+          <div class="h-15 xl:h-17.5 ml-auto">
+            <img src="./static/imgs/tukay-year.png" alt="" class="h-full"/>
+          </div>
+        </div>
+      </div>
+
+      <ul class="font-semibold flex justify-between mt-5 lg:mt-5.75 menu max-lg:divide-y divide-grey">
+        <li>
+          <a href="#">
+            <span>О конгрессе</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li><a href="#">Об организации</a></li>
+            <li><a href="#">История ВКТ</a></li>
+            <li><a href="#">Руководство и аппарат</a></li>
+            <li><a href="#">Милли шура</a></li>
+            <li><a href="#">Общественные организации</a></li>
+            <li><a href="#">Стратегия действий</a></li>
+            <li><a href="#">План работы конгресса</a></li>
+            <li><a href="#">Документы</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span>Новости</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li><a href="#">Все новости</a></li>
+            <li><a href="#">Интервью и мнения</a></li>
+            <li><a href="#">СМИ о нас</a></li>
+            <li><a href="#">Пресс-релизы</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span>Проекты</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li><a href="#">Проекты конгресса</a></li>
+            <li><a href="#">Съезды и форумы</a></li>
+            <li><a href="#">Конкурсы</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Фестивали</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span>Медиа</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li><a href="#">Студия «Дөнья»</a></li>
+            <li><a href="#">Газета «Халкым минем»</a></li>
+            <li><a href="#">Журнал «Туган җир»</a></li>
+            <li><a href="#">Фотоальбомы</a></li>
+            <li><a href="#">Видеоархив</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span>Организация</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li>
+              <a href="#">
+                <span>Татарские организации в России</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Татарские организации в регионах России</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Татарские организации зарубежом</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Художественные коллективы</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Национальные учебные заведения</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Татарские СМИ в регионах России</span>
+                <span class="thumb">178</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span>Национальная жизнь</span>
+            <img src="./static/imgs/icons/footer/arrow-down.svg" alt="" class="lg:hidden"/>
+          </a>
+
+          <ul>
+            <li><a href="#"><span>История</span></a></li>
+            <li><a href="#"><span>Культура</span></a></li>
+            <li><a href="#"><span>Образование</span></a></li>
+            <li><a href="#"><span>Личности</span></a></li>
+            <li><a href="#"><span>Наука</span></a></li>
+            <li><a href="#"><span>Религия</span></a></li>
+            <li><a href="#"><span>Политика</span></a></li>
+            <li><a href="#"><span>Права человека</span></a></li>
+            <li><a href="#"><span>Предпринимательство</span></a></li>
+            <li><a href="#"><span>Художественные коллективы</span></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

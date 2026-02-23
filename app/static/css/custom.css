@@ -1,0 +1,71 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F6F6F6;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1406px;
+    padding: 0 17px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+textarea,
+input {
+    outline: none;
+}
+
+.show-more-btn {
+    @apply bg-white text-center w-full text-sm font-semibold h-12.5 grid place-items-center;
+}
+
+.status {
+    font-weight: 600;
+    padding: 0 8px;
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.2;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embla__viewport {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+}
+
+.embla__dot {
+    @apply flex gap-x-2.5;
+}
+
+.embla__dot {
+    @apply size-2 rounded-full bg-black/20;
+}
+
+.embla__dot--selected {
+    @apply bg-black;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+}
