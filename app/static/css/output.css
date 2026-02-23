@@ -239,6 +239,9 @@
   .right-4 {
     right: calc(var(--spacing) * 4);
   }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
   .right-7\.5 {
     right: calc(var(--spacing) * 7.5);
   }
@@ -247,6 +250,9 @@
   }
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
   }
   .bottom-7\.5 {
     bottom: calc(var(--spacing) * 7.5);
@@ -296,8 +302,14 @@
       max-width: 96rem;
     }
   }
+  .my-25 {
+    margin-block: calc(var(--spacing) * 25);
+  }
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
+  }
+  .mt-2\.25 {
+    margin-top: calc(var(--spacing) * 2.25);
   }
   .mt-2\.75 {
     margin-top: calc(var(--spacing) * 2.75);
@@ -320,6 +332,9 @@
   .mt-7\.5 {
     margin-top: calc(var(--spacing) * 7.5);
   }
+  .mt-9\.5 {
+    margin-top: calc(var(--spacing) * 9.5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -331,6 +346,9 @@
   }
   .mt-22 {
     margin-top: calc(var(--spacing) * 22);
+  }
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
   }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
@@ -371,6 +389,9 @@
   .mb-4\.25 {
     margin-bottom: calc(var(--spacing) * 4.25);
   }
+  .mb-4\.75 {
+    margin-bottom: calc(var(--spacing) * 4.75);
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -395,6 +416,9 @@
   .mb-8\.25 {
     margin-bottom: calc(var(--spacing) * 8.25);
   }
+  .mb-9\.75 {
+    margin-bottom: calc(var(--spacing) * 9.75);
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
@@ -418,6 +442,12 @@
   }
   .ml-auto {
     margin-left: auto;
+  }
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
   .line-clamp-5 {
     overflow: hidden;
@@ -452,6 +482,14 @@
   .size-2\.75 {
     width: calc(var(--spacing) * 2.75);
     height: calc(var(--spacing) * 2.75);
+  }
+  .size-4\.5 {
+    width: calc(var(--spacing) * 4.5);
+    height: calc(var(--spacing) * 4.5);
+  }
+  .size-7\.5 {
+    width: calc(var(--spacing) * 7.5);
+    height: calc(var(--spacing) * 7.5);
   }
   .size-8\.75 {
     width: calc(var(--spacing) * 8.75);
@@ -574,6 +612,9 @@
   }
   .grid-cols-\[240px_1fr\] {
     grid-template-columns: 240px 1fr;
+  }
+  .grid-cols-\[328px_1fr\] {
+    grid-template-columns: 328px 1fr;
   }
   .grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
@@ -850,11 +891,20 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-7\.5 {
+    padding-inline: calc(var(--spacing) * 7.5);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-2\.75 {
+    padding-block: calc(var(--spacing) * 2.75);
+  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-5\.5 {
     padding-block: calc(var(--spacing) * 5.5);
@@ -904,6 +954,9 @@
   .pr-15 {
     padding-right: calc(var(--spacing) * 15);
   }
+  .pr-21 {
+    padding-right: calc(var(--spacing) * 21);
+  }
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
@@ -921,6 +974,9 @@
   }
   .pb-5\.5 {
     padding-bottom: calc(var(--spacing) * 5.5);
+  }
+  .pb-6\.5 {
+    padding-bottom: calc(var(--spacing) * 6.5);
   }
   .pb-7\.5 {
     padding-bottom: calc(var(--spacing) * 7.5);

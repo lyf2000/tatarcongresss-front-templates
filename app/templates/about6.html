@@ -1,0 +1,41 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="grow">
+      <h1 class="text-page-header mb-15">Стратегия действий татар</h1>
+
+      <div class="space-y-7.5">
+        {% for _ in range(4) %}
+        <a href="#" class="grid grid-cols-[328px_1fr] bg-white rounded-sm">
+          <img src="./static/imgs/mocks/1.png" alt="" class="object-cover rounded-sm" />
+
+          <div class="px-7.5 py-5 flex flex-col">
+            <p class="uppercase text-accent text-tiny"><span class="font-bold">ПУБЛИКАЦИЯ</span> · Стратегия</p>
+            <p class="grow line-clamp-4 text-2xl mb-4.75 mt-2.25">
+              «Кто же ты, если не татарин?» – обратился
+              к своим соплеменникам Шигабутдин Марджани
+              во второй половине XIX века. 
+            </p>
+            <span class="font-medium text-tiny text-thumb-button">16 часов назад</span>
+          </div>
+        </a>
+        {% endfor %}
+
+        <button class="show-more-btn text-xs!">Загрузить больше</button>
+
+        {% include 'blocks/pagination.html' %}
+      </div>
+
+      <button class="mt-25 show-more-btn-accent">План работы конгресса</button>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}

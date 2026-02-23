@@ -1,0 +1,65 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="grow">
+      <h1 class="text-page-header mb-9.75">Общественные организации при ВКТ</h1>
+
+      <div class="space-y-7.5">
+        <form class="relative border-b border-black/10">
+          <button type="submit" class="absolute left-0 top-1/2 -translate-y-1/2 size-4.5">
+            <img src="./static/imgs/icons/loop.svg" alt="" width="18" height="18">
+          </button>
+
+          <input type="text" placeholder="Поиск по организациям" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
+        </form>
+
+        <div class="grid grid-cols-[240px_1fr] gap-x-2.5">
+          <a href="#">
+            <img src="./static/imgs/mocks/5.png" alt="" class="object-cover rounded-sm bg-white" />
+          </a>
+
+          <div class="bg-white rounded-sm pl-7.5 pt-5 pr-5 pb-6.5 relative">
+            <div class="flex items-center gap-x-2.5">
+              <p class="grow text-2xl font-semibold">Альянс татар Европы</p>
+
+              <div class="flex gap-x-2.5">
+                <a href="#" rel="nofollow" target="_blank" class="bg-grey2 rounded-full size-12.5 grid place-content-center">
+                  <img src="./static/imgs/icons/social/tg-black.svg" alt="" width="18" height="18" />
+                </a>
+                <a href="#" rel="nofollow" target="_blank" class="bg-grey2 rounded-full size-12.5 grid place-content-center">
+                  <img src="./static/imgs/icons/social/wa-black.svg" alt="" width="18" height="18" />
+                </a>
+                <a href="#" rel="nofollow" target="_blank" class="bg-grey2 rounded-full size-12.5 grid place-content-center">
+                  <img src="./static/imgs/icons/social/vk-black.svg" alt="" width="18" height="18" />
+                </a>
+                <a href="#" rel="nofollow" target="_blank" class="bg-grey2 rounded-full size-12.5 grid place-content-center">
+                  <img src="./static/imgs/icons/social/max-black.svg" alt="" width="18" height="18" />
+                </a>
+              </div>
+            </div>
+            <p class="mt-9.5 font-medium leading-[1.4] pr-21">
+              Сохранение языка, открытие мечетей, организация воскресных школ, издание книг, проведение Сабантуя
+            </p>
+
+            <a href="#" class="absolute bottom-5 right-5">
+              <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" />
+            </a>
+          </div>
+        </div>
+
+        <button class="show-more-btn bg-white text-xs!">Загрузить больше</button>
+      </div>
+
+      <button class="mt-17.5 show-more-btn-accent">Стратегия действий татар</button>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}
