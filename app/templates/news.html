@@ -1,0 +1,76 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-17.5 flex gap-x-22">
+  <div class="grow min-w-0">
+    {% include 'blocks/breadcrumbs.html' %}
+
+    <h1 class="text-page-header mb-7.5">Новости всемирного конгресса татар</h1>
+
+    <div class="aspect-1024/420 text-white">
+      {% include 'blocks/news-main-banner.html' %}
+    </div>
+
+    <div class="my-10 flex gap-x-2.5 font-semibold text-sm">
+      <button class="rounded-sm border border-accent py-5.75 px-4.5">Все новости</button>
+      <button class="rounded-sm border border-button py-5.75 px-4.5">Культура</button>
+      <button class="rounded-sm border border-button py-5.75 px-4.5">Политика</button>
+      <button class="rounded-sm border border-button py-5.75 px-4.5">Молодёжь</button>
+      <button class="rounded-sm border border-button py-5.75 px-4.5">Религия</button>
+      <button class="rounded-sm border border-button py-5.75 px-4.5">В мире</button>
+    </div>
+
+    <div class="space-y-7.5">
+      {% for _ in range(4) %}
+      <a href="#" class="text-tiny flex items-stretch bg-white rounded-sm">
+        <img src="./static/imgs/mocks/1.png" alt="" class="w-full aspect-356/218 lg:w-1/2 xl:w-82 rounded-sm shrink-0 object-cover" />
+
+        <div class="p-4 lg:px-7.5 lg:py-5.5 flex flex-col min-w-0">
+          <p class="uppercase text-accent">
+            <span class="font-bold">Новость</span> · Анонс
+          </p>
+
+          <div class="grow">
+            <p class="-tracking-2 font-bold text-black lg:line-clamp-4 text-base lg:text-lg mt-3 mb-4.5">Республиканский конкурс «Татар кызы 2026» объявляет старт муниципальных и зональных этапов!</p>
+          </div>
+
+          <p class="text-thumb-button">16 часов назад</p>
+        </div>
+      </a>
+      {% endfor %}
+
+      <button class="show-more-btn">Загрузить больше</button>
+      {% include 'blocks/pagination.html' %}
+    </div>
+  </div>
+
+  <div class="shrink-0 w-65 space-y-7.5">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="rounded-sm overflow-hidden bg-red-400"></div>
+
+    <div class="bg-white pt-42.25 rounded-sm px-5 pb-5 relative font-medium text-xs overflow-hidden">
+      <div class="absolute rounded-full size-55.5 bg-white2 grid place-content-center -top-9.75">
+        <img src="./static/imgs/mocks/3.png" alt="" class="object-cover size-46 rounded-full bg-white" />
+      </div>
+
+      <span class="relative z-1 status bg-accent text-white">ПЕРСОНА</span>
+      <p class="font-bold text-base -tracking-2 mt-4.5 mb-3.25">Поздравляем Давлятова Ильдуса Ядкаровича с днем рождения!</p>
+      <p class="mb-2.75 text-thumb-button">Родился 20 декабря 1969 года</p>
+      <p class="">Депутат Законодательного Собрания Оренбургской области 6 созыва, кандидат сельскохозяйственных наук.</p>
+    </div>
+
+    <div class="rounded-sm overflow-hidden bg-red-400"></div>
+  </div>
+</section>
+
+<section class="container mb-12.5">
+  {% include 'blocks/congress-media.html' %}
+</section>
+
+<section class="container mb-17.5">
+  {% include 'blocks/congress-projects.html' %}
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}

@@ -1,0 +1,44 @@
+<div class="embla relative">
+  <div class="flex justify-between items-center mb-6.75 min-h-5">
+    <h4 class="sm:text-3xl sm:font-light">Медиа конгресса</h4>
+
+    <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
+      <button class="embla__prev flex items-center justify-center aspect-square">
+        <img src="./static/imgs/icons/slider-arrow-left.svg" alt="" width="20" height="20" />
+      </button>
+      <button class="embla__next flex items-center justify-center aspect-square bg-white rounded-sm">
+        <img src="./static/imgs/icons/slider-arrow-right.svg" alt="" width="20" height="20" />
+      </button>
+    </div>
+  </div>
+
+  <div class="embla__viewport">
+    <div class="embla__container">
+      {% for _ in range(10) %}
+      <a href="#" class="ml-2.5 sm:ml-5 relative shrink-0 rounded-sm overflow-hidden p-7.5 w-82 flex flex-col justify-end aspect-square min-w-0">
+        <div class="-z-1 absolute size-full bg-linear-to-b from-black/10 to-black/60 top-0 left-0"></div>
+        <img src="./static/imgs/mocks/1.png" alt="" class="size-full absolute object-cover -z-2 top-0 left-0" />
+
+        <img src="./static/imgs/icons/video-play.svg" alt="" width="50" height="50" />
+
+        <p class="mt-5 mb-4.5 font-bold text-white">
+          Открытие мемориальной доски советскому пограничнику, Герою Советского Союза Гильфану Батаршину
+        </p>
+
+        <div class="flex justify-between">
+          <span class="bg-white status">ВИДЕО</span>
+          <span class="text-tiny font-medium text-white/50">12 часов назад</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="mt-5 flex justify-center gap-x-2.5 embla__dots max-sm:absolute max-sm:right-4.25 max-sm:top-1.5 max-sm:mt-0"></div>
+
+  <script type="text/template" id="embla-dot-template">
+    <button class="embla__dot"></button>
+  </script>
+
+  <a href="#" class="show-more-btn mt-5">Все медиа материалы</a>
+</div>

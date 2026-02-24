@@ -1,0 +1,83 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="grow">
+      <h1 class="text-page-header mb-15">План работы конгресса на 2025 год</h1>
+      <table class="about-table">
+        <thead>
+          <tr>
+            <th>ЧАРА ИСЕМЕ</th>
+            <th>ВАКЫТ</th>
+            <th>ҮТКӘРҮ УРЫНЫ</th>
+            <th>Җаваплылар</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for _ in range(3) %}
+          <tr>
+            <td>
+              <p class="title">Татарстан Республикасының «Татар халкының милли үзенчәлеген саклау (2024-2026 елларга)» дәүләт программасын гамәлгә ашыру буенча эш</p>
+            </td>
+            <td>
+              <span class="time">22-25</span>
+              <span class="month">декабрь</span>
+            </td>
+            <td>
+              <p>Татарстан Республикасы, Россия Федерациясе төбәкләре, чит илләр</p>
+            </td>
+            <td>
+              <p>Татарстан Республикасы министрлыклары һәм ведомстволары, Бөтендөнья татар конгрессы Башкарма комитеты</p>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h3 class="mt-15 mb-6.5 text-3xl font-semibold -tracking-4">Масштабные проекты всемирного конгресса татар</h3>
+      <table class="about-table">
+        <thead>
+        <tr>
+          <th>ЧАРА ИСЕМЕ</th>
+          <th>ВАКЫТ</th>
+          <th>ҮТКӘРҮ УРЫНЫ</th>
+          <th>Җаваплылар</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for _ in range(7) %}
+        <tr>
+          <td>
+            <p class="title">Татарстан Республикасының «Татар халкының милли үзенчәлеген саклау (2024-2026 елларга)» дәүләт программасын гамәлгә ашыру буенча эш</p>
+          </td>
+          <td>
+            <span class="time">22-25</span>
+            <span class="month">декабрь</span>
+          </td>
+          <td>
+            <p>Татарстан Республикасы, Россия Федерациясе төбәкләре, чит илләр</p>
+          </td>
+          <td>
+            <p>Татарстан Республикасы министрлыклары һәм ведомстволары, Бөтендөнья татар конгрессы Башкарма комитеты</p>
+          </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+      <button class="show-more-btn my-7.5">Загрузить больше</button>
+
+      {% include 'blocks/pagination.html' %}
+
+      <button class="mt-25 show-more-btn-accent">Документы</button>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}

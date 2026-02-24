@@ -1,0 +1,51 @@
+.about-table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+
+    th {
+        padding: 0 20px 11px;
+        @apply text-tiny uppercase text-thumb-button font-bold text-left;
+    }
+
+    td {
+        border-radius: 4px;
+        padding: 22px 20px 20px;
+        vertical-align: top;
+        position: relative;
+    }
+
+    p {
+        @apply text-xs -tracking-2 font-medium;
+    }
+
+    .time {
+        @apply block text-3xl -tracking-2 mb-1 whitespace-nowrap font-light;
+    }
+
+    .month {
+        @apply text-sm -tracking-2 font-medium;
+    }
+
+    .title {
+        @apply font-bold text-base -tracking-1;
+    }
+
+    tbody {
+        tr {
+            td {
+                &:not(:first-child) {
+                    &:before {
+                        content: '';
+                        @apply bg-thumb-button/30 w-px absolute -top-4.75 bottom-0 left-[-2.5px];
+                    }
+                }
+            }
+
+            &:nth-child(odd) {
+                td {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

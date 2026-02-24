@@ -4,9 +4,12 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./simplebar.css";
+@import "./about-table.css";
+@import "./news-in.css";
 @import "./map.css";
 
 @theme {
+    --color-button: #E5E5E5;
     --color-grey: #EFEFEF;
     --color-grey2: #F6F6F6;
     --color-accent: #E89702;
