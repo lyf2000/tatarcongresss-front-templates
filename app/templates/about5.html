@@ -18,6 +18,7 @@
           <input type="text" placeholder="Поиск по организациям" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
         </form>
 
+        {% for _ in range(5) %}
         <div class="grid grid-cols-[240px_1fr] gap-x-2.5">
           <a href="#">
             <img src="./static/imgs/mocks/5.png" alt="" class="object-cover rounded-sm bg-white" />
@@ -51,8 +52,9 @@
             </a>
           </div>
         </div>
+        {% endfor %}
 
-        <button class="show-more-btn bg-white text-xs!">Загрузить больше</button>
+        <button class="show-more-btn">Загрузить больше</button>
       </div>
 
       <button class="mt-17.5 show-more-btn-accent">Стратегия действий татар</button>

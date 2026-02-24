@@ -1,0 +1,200 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="grow min-w-0">
+      <img src="./static/imgs/mocks/6.png" alt="" class="object-cover aspect-1024/400 w-full mb-7.5" />
+
+      <span class="text-sm text-thumb-button font-medium mb-0.75">Общественная организация</span>
+      <h1 class="font-semibold text-page-header mb-5.5">Всемирный форум татарской молодежи</h1>
+      <p class="mb-9.5 text-lg font-medium">
+        Поиск путей сохранения и развития молодым поколением татар национальных ценностей, таких как знание родного языка, своей истории и культуры, определение ориентиров развития нации на ближайшую перспективу, а также создание платформы для общения, обмена опытом.
+      </p>
+
+      <div class="flex items-center gap-x-5">
+        <button class="show-more-btn bg-accent! text-white w-42.5!">Сайт организации</button>
+
+        <div class="flex gap-x-2">
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/tg-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/wa-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/vk-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/max-black.svg" alt="" width="14" height="14" />
+          </a>
+        </div>
+      </div>
+
+      <hr class="text-black/10 mb-10 mt-12.5" />
+
+      <p class="text-lg font-light mb-7.5">
+        Составной частью деятельности Всемирного конгресса татар является целенаправленная  работа с молодым поколением, которое несёт в себе накопленные ценности и традиции старшего поколения, и тем самым обеспечивает преемственность развития татарской нации.
+        <br /><br />
+        Главным реализованным проектом ВКТ в данной области стало создание в 2004 году общественной организации “Всемирный форум татарской молодежи” (зарегистрирована Управлением Министерства юстиции Российской Федерации по Республике Татарстан 5 мая 2012 г., гос. № 1121600002369) и проведение форумов (съездов) татарской  молодежи.
+        <br /><br />
+        Согласно Уставу ВФТМ,  форум (съезд) этой международной организации проводится раз в два года. Его целью является поиск путей сохранения молодым поколением татар национальных ценностей, таких как знание родного языка, своей истории и культуры, определение ориентиров развития нации на ближайшую перспективу.
+      </p>
+      <button class="show-more-btn">Показать полностью</button>
+
+      <h4 class="-tracking-4 text-3xl font-semibold mb-7.5 mt-17.5">Деятельность</h4>
+      <ul class="text-xl space-y-7.5 mb-15">
+        <li class="relative flex">
+          <span class="shrink-0 w-40 border-t pt-4.5 border-accent font-semibold">2004</span>
+          <p class="pt-4.5 border-t border-black/10">Первый Форум состоялся с 24 по 28 июня 2004 года. Он собрал 484 делегата
+            из Татарстана, регионов Российской Федерации и охватил 16 стран мира.</p>
+        </li>
+        <li class="relative flex">
+          <span class="shrink-0 w-40 border-t pt-4.5 border-accent font-semibold">2006</span>
+          <p class="pt-4.5 border-t border-black/10">II Всемирный форум татарской молодежи прошел с 21 по 25 июня 2006 года,
+            в работе которого приняло участие 580 делегатов из районов Республики Татарстан, регионов Российской Федерации и стран ближнего
+            и дальнего зарубежья.</p>
+        </li>
+      </ul>
+      <button class="show-more-btn">Показать полностью</button>
+
+      <div class="embla relative mt-17.5">
+        <div class="flex justify-between items-center mb-7.5 min-h-10.5">
+          <h4 class="sm:text-3xl font-semibold">Фотографии</h4>
+
+          <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
+            <button class="embla__prev flex items-center justify-center aspect-square">
+              <img src="./static/imgs/icons/slider-arrow-left.svg" alt="" width="20" height="20" />
+            </button>
+            <button class="embla__next flex items-center justify-center aspect-square bg-white rounded-sm">
+              <img src="./static/imgs/icons/slider-arrow-right.svg" alt="" width="20" height="20" />
+            </button>
+          </div>
+        </div>
+
+        <div class="embla__viewport">
+          <div class="embla__container">
+            {% for _ in range(10) %}
+            <img src="./static/imgs/mocks/7.png" alt="" class="object-cover aspect-square w-82 ml-5" />
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="mt-5 flex justify-center gap-x-2.5 embla__dots max-sm:absolute max-sm:right-4.25 max-sm:top-1.5 max-sm:mt-0"></div>
+      </div>
+
+      <h4 class="-tracking-4 text-3xl font-semibold mb-7.5 mt-17.5">Команда</h4>
+      <div class="space-y-7.5">
+        {% for _ in range(4) %}
+        <div class="border-t border-black/10 pt-7.5 flex items-center">
+          <img src="./static/imgs/mocks/8.png" alt="" class="object-cover size-15 rounded-sm shrink-0 mr-5 bg-whte rounded-sm" />
+
+          <div class="grow">
+            <p class="mb-1.25 font-semibold text-xl">Хасанов Райнур Рауфович</p>
+            <p class="font-medium text-base">Председатель форума</p>
+          </div>
+
+          <div class="flex items-center gap-x-6.5">
+            <div class="flex gap-x-2">
+              <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+                <img src="./static/imgs/icons/social/tg-black.svg" alt="" width="14" height="14" />
+              </a>
+              <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+                <img src="./static/imgs/icons/social/wa-black.svg" alt="" width="14" height="14" />
+              </a>
+              <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+                <img src="./static/imgs/icons/social/vk-black.svg" alt="" width="14" height="14" />
+              </a>
+              <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+                <img src="./static/imgs/icons/social/max-black.svg" alt="" width="14" height="14" />
+              </a>
+            </div>
+
+            <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" />
+          </div>
+        </div>
+        {% endfor %}
+
+        <button class="show-more-btn">Показать еще</button>
+      </div>
+
+      <div class="embla relative mt-17.5">
+        <div class="flex justify-between items-center mb-6.75 min-h-5">
+          <h4 class="-tracking-4 text-3xl font-semibold mb-7.5">Связанные новости</h4>
+
+          <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
+            <button class="embla__prev flex items-center justify-center aspect-square">
+              <img src="./static/imgs/icons/slider-arrow-left.svg" alt="" width="20" height="20" />
+            </button>
+            <button class="embla__next flex items-center justify-center aspect-square bg-white rounded-sm">
+              <img src="./static/imgs/icons/slider-arrow-right.svg" alt="" width="20" height="20" />
+            </button>
+          </div>
+        </div>
+
+        <div class="embla__viewport">
+          <div class="embla__container">
+            {% for _ in range(10) %}
+            <a href="#" class="w-82 shrink-0 ml-5 text-tiny rounded-sm flex flex-col bg-white">
+              <img src="./static/imgs/mocks/1.png" alt="" class="object-cover rounded-sm aspect-video sm:h-50" />
+
+              <div class="p-4 xl:px-7.5 xl:pt-5.5 xl:pb-5.25 grow flex flex-col">
+                <p class="text-accent uppercase">
+                  <span class="font-bold">Новость</span> · Политика
+                </p>
+                <p class="-tracking-2 mt-3.25 mb-1 line-clamp-5 font-bold text-base grow">
+                  Раскрой свой потенциал: в Татарстане стартует премия «Студент года Республики Татарстан — 2025»
+                </p>
+                <p class="text-thumb-button">2 дня назад</p>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="mt-5 flex justify-center gap-x-2.5 embla__dots max-sm:absolute max-sm:right-4.25 max-sm:top-1.5 max-sm:mt-0"></div>
+
+        <script type="text/template" id="embla-dot-template">
+          <button class="embla__dot"></button>
+        </script>
+
+        <a href="#" class="show-more-btn mt-5">Все медиа материалы</a>
+      </div>
+
+      <h4 class="-tracking-4 text-3xl font-semibold mb-7.5 mt-17.5">Контакты</h4>
+      <div class="grid grid-cols-3 gap-5">
+        <div class="bg-white rounded-sm pt-5.75 p-7.5 min-h-82 flex flex-col">
+          <p class="text-xl font-medium text-accent">Связь</p>
+
+          <a href="tel:88432997717" class="mt-auto font-medium text-xl mb-1">8 843 299-77-17</a>
+          <span class="text-xs block text-thumb-button font-medium">Горячая линия</span>
+
+          <a href="mailto:tatforum2020@gmail.com" class="mt-6.75 font-medium text-xl mb-1">tatforum2020@gmail.com</a>
+          <span class="text-xs block text-thumb-button font-medium">Электронная почта</span>
+
+          <button class="mt-6.75 text-white show-more-btn bg-accent!">Сайт организации</button>
+        </div>
+
+        <div class="bg-white rounded-sm pt-5.75 p-7.5 min-h-82 flex flex-col">
+          <p class="text-xl font-medium text-accent">Адрес</p>
+
+          <p class="mt-13.75 text-xl font-medium">Казань, ул.Карла Маркса 38/5, III этаж, 304 каб.</p>
+
+          <span class="text-xs block text-thumb-button font-medium mt-8">Режим работы</span>
+          <span class="text-xs block text-thumb-button font-medium mt-1.75">Пн - Сб с 10:00 до 19:00, Вс выходной</span>
+
+          <button class="show-more-btn bg-grey2! mt-auto">Проложить маршрут</button>
+        </div>
+
+        <div class="bg-red-400 rounded-sm relative min-h-82">
+          <button class="show-more-btn absolute z-1 bottom-7.5 inset-x-7.5 w-auto!">Открыть на карте</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/footer.html' %}

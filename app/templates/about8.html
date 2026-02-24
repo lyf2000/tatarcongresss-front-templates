@@ -1,0 +1,41 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-25">
+  {% include 'blocks/breadcrumbs.html' %}
+
+  <div class="flex gap-x-22">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="grow">
+      <h1 class="text-page-header mb-12.5">Документы</h1>
+
+      <form class="grow flex items-center relative border-b border-grey gap-x-2.5 mb-7.5">
+        <button type="submit" class="absolute left-0 top-0">
+          <img src="./static/imgs/icons/loop.svg" alt="">
+        </button>
+        <input type="text" placeholder="Поиск по документам" class="pb-2.5 pl-7 placeholder:text-black text-xs w-full"/>
+      </form>
+
+      <div class="space-y-2.5">
+        {% for _ in range(10) %}
+        <a href="#" class="flex items-center bg-white rounded-sm px-5 pb-4 pt-3.5 gap-x-5">
+          <img src="./static/imgs/icons/document-text.svg" alt="" class="shrink-0" width="32" height="32" />
+
+          <div class="tracking-1">
+            <p class="font-bold text-balance mb-0.5">Устав Всемирного конгресса татар</p>
+            <p class="font-medium text-xs">Файл PDF · 433,4 кб</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+
+      <button class="my-7.5 show-more-btn">Загрузить больше</button>
+
+      {% include 'blocks/pagination.html' %}
+    </div>
+  </div>
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}

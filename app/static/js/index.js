@@ -33,53 +33,56 @@ document.querySelector('#app-header .burger').addEventListener('click', () => {
     document.body.classList.toggle('overflow-hidden');
 });
 
-const wrapperNode = document.querySelector('.embla')
-const viewportNode = wrapperNode.querySelector('.embla__viewport')
-const prevButtonNode = wrapperNode.querySelector('.embla__prev')
-const nextButtonNode = wrapperNode.querySelector('.embla__next')
-const dotsNode = wrapperNode.querySelector('.embla__dots')
+document.querySelectorAll('.embla').forEach(wrapperNode => {
+    console.log(wrapperNode)
 
-const emblaApi = EmblaCarousel(viewportNode, {
-    loop: true,
-    align: 'start'
-})
+    const viewportNode = wrapperNode.querySelector('.embla__viewport')
+    const prevButtonNode = wrapperNode.querySelector('.embla__prev')
+    const nextButtonNode = wrapperNode.querySelector('.embla__next')
+    const dotsNode = wrapperNode.querySelector('.embla__dots')
 
-prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
-nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+    const emblaApi = EmblaCarousel(viewportNode, {
+        loop: true,
+        align: 'start'
+    })
 
-const addDotButtonAndClickHandlers = (emblaApi, dotsNode) => {
-    let dotNodes = []
+    prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
+    nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
 
-    const addDotBtnsWithClickHandlers = () => {
-        dotsNode.innerHTML = emblaApi
-            .scrollSnapList()
-            .map(() => '<button class="embla__dot" type="button"></button>')
-            .join('')
+    const addDotButtonAndClickHandlers = (emblaApi, dotsNode) => {
+        let dotNodes = []
 
-        const scrollTo = (index) => {
-            emblaApi.scrollTo(index)
+        const addDotBtnsWithClickHandlers = () => {
+            dotsNode.innerHTML = emblaApi
+                .scrollSnapList()
+                .map(() => '<button class="embla__dot" type="button"></button>')
+                .join('')
+
+            const scrollTo = (index) => {
+                emblaApi.scrollTo(index)
+            }
+
+            dotNodes = Array.from(dotsNode.querySelectorAll('.embla__dot'))
+            dotNodes.forEach((dotNode, index) => {
+                dotNode.addEventListener('click', () => scrollTo(index), false)
+            })
         }
 
-        dotNodes = Array.from(dotsNode.querySelectorAll('.embla__dot'))
-        dotNodes.forEach((dotNode, index) => {
-            dotNode.addEventListener('click', () => scrollTo(index), false)
-        })
+        const toggleDotButtonsActive = () => {
+            const previous = emblaApi.previousScrollSnap()
+            const selected = emblaApi.selectedScrollSnap()
+            dotNodes[previous].classList.remove('embla__dot--selected')
+            dotNodes[selected].classList.add('embla__dot--selected')
+        }
+
+        addDotBtnsWithClickHandlers()
+        toggleDotButtonsActive()
+
+        emblaApi
+            .on('reinit', addDotBtnsWithClickHandlers)
+            .on('reinit', toggleDotButtonsActive)
+            .on('select', toggleDotButtonsActive)
     }
 
-    const toggleDotButtonsActive = () => {
-        const previous = emblaApi.previousScrollSnap()
-        const selected = emblaApi.selectedScrollSnap()
-        dotNodes[previous].classList.remove('embla__dot--selected')
-        dotNodes[selected].classList.add('embla__dot--selected')
-    }
-
-    addDotBtnsWithClickHandlers()
-    toggleDotButtonsActive()
-
-    emblaApi
-        .on('reinit', addDotBtnsWithClickHandlers)
-        .on('reinit', toggleDotButtonsActive)
-        .on('select', toggleDotButtonsActive)
-}
-
-addDotButtonAndClickHandlers(emblaApi, dotsNode)
+    addDotButtonAndClickHandlers(emblaApi, dotsNode)
+});

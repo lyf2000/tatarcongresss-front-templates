@@ -5,10 +5,11 @@ body {
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #F6F6F6;
     font-weight: 500;
     color: #000;
     line-height: 1.2;
+
+    @apply bg-grey2;
 }
 
 .container {
@@ -29,7 +30,7 @@ input {
 }
 
 .show-more-btn {
-    @apply bg-white text-center w-full text-sm font-semibold h-12.5 grid place-items-center;
+    @apply bg-white text-center w-full text-xs font-semibold h-12.5 grid place-items-center rounded-sm;
 }
 
 .show-more-btn-accent {
