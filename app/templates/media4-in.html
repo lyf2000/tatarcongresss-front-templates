@@ -63,19 +63,7 @@
 
     <div class="space-y-5 w-82 shrink-0">
       {% for _ in range(4) %}
-      <a href="#" class="text-tiny rounded-sm flex flex-col bg-white">
-        <img src="./static/imgs/mocks/1.png" alt="" class="object-cover rounded-sm aspect-video sm:h-50" />
-
-        <div class="p-4 xl:px-7.5 xl:pt-5.5 xl:pb-5.25 grow flex flex-col">
-          <p class="text-accent uppercase">
-            <span class="font-bold">Новость</span> · Политика
-          </p>
-          <p class="-tracking-2 mt-3.25 mb-1 line-clamp-5 font-bold text-base grow">
-            Раскрой свой потенциал: в Татарстане стартует премия «Студент года Республики Татарстан — 2025»
-          </p>
-          <p class="text-thumb-button">2 дня назад</p>
-        </div>
-      </a>
+      {% include 'blocks/media-card.html' %}
       {% endfor %}
     </div>
   </div>
