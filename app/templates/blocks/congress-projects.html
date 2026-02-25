@@ -13,36 +13,7 @@
   </div>
 
   {% for _ in range(3) %}
-  <a href="#" class="flex flex-col gap-2.5 lg:gap-5">
-    <div class="overflow-hidden rounded-sm relative">
-      <div class="bg-linear-to-b from-black/10 to-black/60 absolute size-full z-1"></div>
-      <img src="./static/imgs/mocks/1.png" alt="" class="size-fit object-cover" />
-
-      <div class="absolute z-2 inset-x-7.5 bottom-7.5 text-white text-tiny font-medium flex items-end gap-x-2 justify-between">
-        <div>
-          <p class="mb-4.5 text-2xl font-bold -tracking-2">Мин татарча сөйләшәм</p>
-          <p>
-            <span class="font-bold">Проект</span> · Активный
-          </p>
-        </div>
-
-        <img src="./static/imgs/mocks/1.svg" alt="" width="88" height="88" />
-      </div>
-    </div>
-
-    <div class="flex gap-7.5 items-center text-tiny">
-      <button class="text-white rounded-sm bg-accent grid place-items-center h-12.5 w-27.5 font-semibold text-xs">Участвовать</button>
-
-      <div>
-        <p class="text-lg mb-0.75 font-bold -tracking-2">25 000</p>
-        <p>Участников</p>
-      </div>
-      <div>
-        <p class="text-lg mb-0.75 font-bold -tracking-2">86</p>
-        <p>Городов мира</p>
-      </div>
-    </div>
-  </a>
+  {% include 'blocks/project-card.html' %}
   {% endfor %}
 
   <a href="#" class="flex-col gap-2.5 lg:gap-5 hidden md:max-lg:flex">

@@ -1,0 +1,48 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-17.5 flex gap-x-22">
+  <div class="grow min-w-0">
+    {% include 'blocks/breadcrumbs.html' %}
+
+    <h1 class="text-page-header mb-7.5">Проекты всемирного конгресса татар</h1>
+
+    <div class="aspect-1024/420 text-white">
+      {% include 'blocks/news-main-banner.html' %}
+    </div>
+
+    <div class="mt-7.5  mb-10">
+      {% include 'blocks/tabs-2.html' %}
+    </div>
+
+    <div class="grid grid-cols-2 gap-y-10 gap-x-5 mb-10">
+      {% for _ in range(8) %}
+      {% include 'blocks/project-card.html' %}
+      {% endfor %}
+    </div>
+
+    <button class="show-more-btn mb-7.5">Загрузить больше</button>
+    {% include 'blocks/pagination.html' %}
+  </div>
+
+  <div class="shrink-0 w-65 space-y-7.5">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
+
+    {% include 'blocks/aside-happy-birthday.html' %}
+
+    <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
+  </div>
+</section>
+
+<section class="container mb-12.5">
+  {% include 'blocks/congress-media.html' %}
+</section>
+
+<section class="container mb-17.5">
+  {% include 'blocks/congress-projects.html' %}
+</section>
+
+{% include 'blocks/map.html' %}
+
+{% include 'blocks/footer.html' %}
