@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-black: #000;
     --color-white: #fff;
@@ -530,6 +531,12 @@
   .mb-27\.5 {
     margin-bottom: calc(var(--spacing) * 27.5);
   }
+  .-ml-2\.5 {
+    margin-left: calc(var(--spacing) * -2.5);
+  }
+  .-ml-5 {
+    margin-left: calc(var(--spacing) * -5);
+  }
   .ml-2\.5 {
     margin-left: calc(var(--spacing) * 2.5);
   }
@@ -669,8 +676,14 @@
   .h-12\.5 {
     height: calc(var(--spacing) * 12.5);
   }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
   .h-15 {
     height: calc(var(--spacing) * 15);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
   }
   .h-full {
     height: 100%;
@@ -695,6 +708,9 @@
   }
   .min-h-82 {
     min-height: calc(var(--spacing) * 82);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-9\.5 {
     width: calc(var(--spacing) * 9.5);
@@ -722,9 +738,6 @@
   }
   .w-42\.5\! {
     width: calc(var(--spacing) * 42.5) !important;
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-50\! {
     width: calc(var(--spacing) * 50) !important;
@@ -774,6 +787,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -843,9 +859,6 @@
   }
   .gap-7\.5 {
     gap: calc(var(--spacing) * 7.5);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
   }
   .space-y-2\.5 {
     :where(& > :not(:last-child)) {
@@ -1052,6 +1065,9 @@
   .bg-grey2\! {
     background-color: var(--color-grey2) !important;
   }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
@@ -1121,23 +1137,8 @@
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-2\.75 {
-    padding-inline: calc(var(--spacing) * 2.75);
-  }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-3\.5 {
-    padding-inline: calc(var(--spacing) * 3.5);
-  }
   .px-3\.75 {
     padding-inline: calc(var(--spacing) * 3.75);
-  }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
   }
   .px-4\.5 {
     padding-inline: calc(var(--spacing) * 4.5);
@@ -1150,9 +1151,6 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  .px-375 {
-    padding-inline: calc(var(--spacing) * 375);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -1255,9 +1253,6 @@
   }
   .pr-15 {
     padding-right: calc(var(--spacing) * 15);
-  }
-  .pr-20 {
-    padding-right: calc(var(--spacing) * 20);
   }
   .pr-21 {
     padding-right: calc(var(--spacing) * 21);
@@ -1415,6 +1410,9 @@
   }
   .text-balance {
     text-wrap: balance;
+  }
+  .whitespace-normal {
+    white-space: normal;
   }
   .whitespace-nowrap {
     white-space: nowrap;

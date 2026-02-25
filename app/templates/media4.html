@@ -1,0 +1,40 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-17.5 flex gap-x-22">
+  <div class="grow min-w-0">
+    {% include 'blocks/breadcrumbs.html' %}
+
+    <h1 class="text-page-header mb-7.5">Медиа · Фотоальбомы</h1>
+
+    <div class="mt-7.5 mb-10">
+      {% include 'blocks/tabs-2.html' %}
+    </div>
+
+    <div class="grid grid-cols-3 gap-5">
+      {% for _ in range(9) %}
+      {% include 'blocks/media-card.html' %}
+      {% endfor %}
+    </div>
+
+    <button class="show-more-btn mb-7.5 mt-5">Загрузить больше</button>
+    {% include 'blocks/pagination.html' %}
+  </div>
+
+  <div class="shrink-0 w-65 space-y-7.5">
+    {% include 'blocks/about-nav.html' %}
+
+    <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
+
+    {% include 'blocks/aside-happy-birthday.html' %}
+
+    <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
+  </div>
+</section>
+
+<section class="container relative mb-7.5">
+  <h3 class="mb-8 text-3xl -tracking-4">Новости</h3>
+
+  {% include 'blocks/news-section.html' %}
+</section>
+
+{% include 'blocks/footer.html' %}

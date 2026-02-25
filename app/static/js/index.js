@@ -46,8 +46,12 @@ document.querySelectorAll('.embla').forEach(wrapperNode => {
         align: 'start'
     })
 
-    prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
-    nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+    if (prevButtonNode) {
+        prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
+    }
+    if (nextButtonNode) {
+        nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+    }
 
     const addDotButtonAndClickHandlers = (emblaApi, dotsNode) => {
         let dotNodes = []
