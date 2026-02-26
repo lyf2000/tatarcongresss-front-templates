@@ -19,10 +19,10 @@
     </form>
 
     <table class="border-separate border-spacing-x-px border-spacing-y-2.5">
-      {% for _ in range(10) %}
+      {% for _ in range(5) %}
       <tr>
         <td class="bg-white rounded-l-sm px-7.5 py-6.5">
-          <p class="mb-2.5 uppercase text-tiny font-medium"><snap class="font-bold">Москва</snap> · Россия</p>
+          <p class="mb-2.5 uppercase text-tiny font-medium text-accent"><snap class="font-bold">Москва</snap> · Россия</p>
           <p class="mb-2 font-bold -tracking-2">Полномочное представительство Республики Татарстан в Российской Федерации</p>
 
           <div class="flex items-center gap-x-0.5 text-xs font-medium">
@@ -32,15 +32,39 @@
         </td>
 
         <td class="bg-white px-7.5 py-6.5">
-          <p class="mb-2.5 uppercase font-bold text-tiny">Руководитель</p>
+          <p class="mb-2.5 uppercase font-bold text-tiny text-thumb-button">Руководитель</p>
           <p class="font-medium -tracking-2">Ахметшин Равиль Калимуллович</p>
         </td>
 
-        <td class="bg-white rounded-r-sm px-7.5 py-6.5">
-          <p class="mb-2.5 uppercase font-bold text-tiny">контакты</p>
-          <a class="mb-1.75 font-semibold -tracking-2" href="tel:87172276966">8 (7172) 27-69-66</a>
-          <a class="mb-1.75 text-xs font-medium -tracking-2" href="tel:87172572421">Дополнительный: 8(7172)57-24-21</a>
-          <a class="font-semibold text-xs -tracking-2" href="mailto:tat.pred@tatar.ru">tat.pred@tatar.ru</a>
+        <td class="bg-white rounded-r-sm px-7.5 py-6.5 relative whitespace-nowrap">
+          <span class="status bg-accent text-white absolute top-5 right-5">САЙТ</span>
+
+          <p class="mb-2.5 uppercase font-bold text-tiny text-thumb-button">контакты</p>
+          <a class="mb-1.75 block font-semibold -tracking-2" href="tel:87172276966">8 (7172) 27-69-66</a>
+          <a class="mb-1.75 block text-xs font-medium -tracking-2 text-thumb-button" href="tel:87172572421">Дополнительный: 8(7172)57-24-21</a>
+          <a class="block font-semibold text-xs -tracking-2" href="mailto:tat.pred@tatar.ru">tat.pred@tatar.ru</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="bg-white rounded-l-sm px-7.5 py-6.5">
+          <p class="mb-2.5 uppercase text-tiny font-medium text-accent"><snap class="font-bold">Москва</snap> · Россия</p>
+          <p class="mb-2 font-bold -tracking-2">Полномочное представительство Республики Татарстан в Российской Федерации</p>
+
+          <div class="flex items-center gap-x-0.5 text-xs font-medium">
+            <img src="./static/imgs/icons/map-black.svg" alt="" width="14" height="14" />
+            <p>Москва, 3-й Котельнический пер., 13/15, стр. 1</p>
+          </div>
+        </td>
+
+        <td class="bg-white px-7.5 py-6.5">
+          <p class="mb-2.5 uppercase font-bold text-tiny text-thumb-button">Руководитель</p>
+          <p class="font-medium -tracking-2">Ахметшин Равиль Калимуллович</p>
+        </td>
+
+        <td class="bg-white rounded-r-sm px-7.5 py-6.5 relative whitespace-nowrap">
+          <p class="mb-2.5 uppercase font-bold text-tiny text-thumb-button">контакты</p>
+          <div class="bg-grey2 rounded-sm h-2.75 mb-2.25 w-43.25"></div>
+          <div class="bg-grey2 rounded-sm h-2.75 w-32.75"></div>
         </td>
       </tr>
       {% endfor %}

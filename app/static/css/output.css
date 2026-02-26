@@ -32,6 +32,7 @@
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
     --radius-sm: 0.25rem;
+    --radius-2xl: 1rem;
     --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -681,6 +682,9 @@
     width: 100%;
     height: 100%;
   }
+  .h-2\.75 {
+    height: calc(var(--spacing) * 2.75);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -750,6 +754,9 @@
   .w-28\.5\! {
     width: calc(var(--spacing) * 28.5) !important;
   }
+  .w-32\.75 {
+    width: calc(var(--spacing) * 32.75);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -758,6 +765,9 @@
   }
   .w-42\.5\! {
     width: calc(var(--spacing) * 42.5) !important;
+  }
+  .w-43\.25 {
+    width: calc(var(--spacing) * 43.25);
   }
   .w-50\! {
     width: calc(var(--spacing) * 50) !important;
@@ -1042,6 +1052,9 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
