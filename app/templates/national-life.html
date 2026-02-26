@@ -1,0 +1,42 @@
+{% include 'blocks/header.html' %}
+
+<section class="container mb-17.5 flex gap-x-22">
+  <div class="grow">
+    {% include 'blocks/breadcrumbs.html' %}
+
+    <h1 class="text-page-header mb-7.5">Национальная жизнь</h1>
+
+    <div class="mb-10">
+      {% include 'blocks/tabs-2.html' %}
+    </div>
+
+    <form class="relative border-b border-black/10 mb-10">
+      <button type="submit" class="absolute left-0 top-1/2 -translate-y-1/2 size-4.5">
+        <img src="./static/imgs/icons/loop.svg" alt="" width="18" height="18">
+      </button>
+
+      <input type="text" placeholder="Поиск по публикациям" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
+    </form>
+
+    <div class="space-y-7.5">
+      {% for _ in range(4) %}
+      {% include 'blocks/news-big-card.html' %}
+      {% endfor %}
+
+      <button class="show-more-btn">Загрузить больше</button>
+      {% include 'blocks/pagination.html' %}
+    </div>
+  </div>
+
+  <div class="shrink-0 w-65 min-w-0">
+    {% include 'blocks/about-nav.html' %}
+  </div>
+</section>
+
+<section class="container relative mb-7.5">
+  <h3 class="mb-7 text-3xl -tracking-4 font-light">Новости</h3>
+
+  {% include 'blocks/news-section.html' %}
+</section>
+
+{% include 'blocks/footer.html' %}

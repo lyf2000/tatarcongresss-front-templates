@@ -11,6 +11,17 @@
         right: calc(anchor(--right-sidebar left) + 20px);
         background: red;
     }
+
+    &._orgs {
+        .map {
+            right: calc(anchor(--right-sidebar left) + 4px);
+            bottom: anchor(--right-sidebar bottom);
+        }
+
+        .simplebar-track {
+            @apply bg-black/4;
+        }
+    }
 }
 
 @media (width < 1024px) {
