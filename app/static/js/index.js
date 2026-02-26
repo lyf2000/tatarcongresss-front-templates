@@ -34,8 +34,6 @@ document.querySelector('#app-header .burger').addEventListener('click', () => {
 });
 
 document.querySelectorAll('.embla').forEach(wrapperNode => {
-    console.log(wrapperNode)
-
     const viewportNode = wrapperNode.querySelector('.embla__viewport')
     const prevButtonNode = wrapperNode.querySelector('.embla__prev')
     const nextButtonNode = wrapperNode.querySelector('.embla__next')
