@@ -32,7 +32,18 @@
     --text-page-header--font-weight: 300;
     --text-page-header--letter-spacing: -0.04em;
 
+    --text-block-header: clamp(24px, 2vw, 30px);
+    --text-block-header--line-height: 1.2;
+    --text-block-header--font-weight: 300;
+    --text-block-header--letter-spacing: -0.04em;
+
     --tracking-1: 0.01em;
     --tracking-2: 0.02em;
     --tracking-4: 0.04em;
+}
+
+@media (width <= 768px) {
+    :root {
+        --text-block-header--font-weight: 600;
+    }
 }
