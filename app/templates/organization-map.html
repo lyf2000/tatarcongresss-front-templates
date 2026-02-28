@@ -1,6 +1,6 @@
 {% include 'blocks/header.html' %}
 
-<section class="container mb-17.5 flex gap-x-22">
+<section class="mb-17.5 flex gap-x-22">
   <div class="grow">
     {% include 'blocks/breadcrumbs.html' %}
 
@@ -14,7 +14,7 @@
       <input type="text" placeholder="Поиск по публикациям" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
     </form>
 
-    <section class="container grid _orgs" id="map-section">
+    <section class="grid _orgs" id="map-section">
       <div class="right-sidebar lg:justify-self-end w-103.5 h-125">
         <div data-simplebar class="max-lg:hidden min-h-0 h-full pr-2.5">
           {% for _ in range(20) %}
@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<section class="container relative mb-7.5">
+<section class="relative mb-7.5">
   <h3 class="mb-7 text-3xl -tracking-4 font-light">Новости</h3>
 
   {% include 'blocks/news-section.html' %}
