@@ -1,43 +1,46 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-25">
+<section class="mb-10 md:mb-25">
   {% include 'blocks/breadcrumbs.html' %}
 
   <div class="flex gap-x-22">
-    <div class="shrink-0 w-65">
+    <div class="max-lg:hidden shrink-0 w-65">
       {% include 'blocks/about-nav.html' %}
     </div>
 
-    <div>
-      <h1 class="text-page-header mb-14.5">Руководство и аппарат всемирного конгресса татар</h1>
+    <div class="grow min-w-0">
+      <h1 class="text-page-header mb-5 md:mb-14.5">Руководство и аппарат всемирного конгресса татар</h1>
 
-      <div class="space-y-17.5">
+      <div class="space-y-5 lg:space-y-17.5">
         {% for _ in range(3) %}
-        <a href="#" class="grid grid-cols-[240px_1fr] gap-x-2.5">
-          <img src="./static/imgs/mocks/4.png" alt="" class="object-cover aspect-square shrink-0 bg-white rounded-sm" />
+        <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-x-2.5 relative">
+          <a href="#" class="aspect-square shrink-0 bg-grey2 md:bg-white rounded-sm overflow-hidden max-md:absolute max-md:top-1.25 max-md:right-1.25 z-1 max-md:size-26.5">
+            <img src="./static/imgs/mocks/4.png" alt="" class="object-cover size-full" />
+          </a>
 
-          <div class="relative p-7.5 bg-white">
-            <div class="bg-accent h-px absolute left-0 top-20 w-17.5"></div>
-            <p class="font-semibold text-[26px] leading-[1.4]">Шайхразиев Василь Габтелгаязович</p>
+          <div class="relative px-3.5 py-3 md:p-7.5 bg-white max-md:pr-31">
+            <p class="font-semibold text-lg md:text-[26px] leading-[1.4]">Шайхразиев Василь Габтелгаязович</p>
 
-            <ul class="mt-7 space-y-2.5 font-medium pr-13.5">
+            <div class="bg-accent h-px w-17.5 mt-2.5 mb-3 md:mb-4.25 -ml-3.5 md:-ml-7.5"></div>
+
+            <ul class="space-y-2.5 max-md:text-xs font-medium md:pr-13.5">
               <li>Заместитель Премьер-министра Республики Татарстан</li>
               <li>Председатель Национального Совета Всемирного конгресса татар</li>
             </ul>
 
-            <p class="text-xs text-thumb-button font-medium mt-10 pr-15">Родился 3 фев 1963, д. Саитово, Мензелинский район, ТАССР</p>
+            <p class="md:text-xs text-thumb-button text-tiny font-medium mt-3 md:mt-10 md:pr-15">Родился 3 фев 1963, д. Саитово, Мензелинский район, ТАССР</p>
 
-            <a href="#" class="absolute bottom-7.5 right-7.5">
+            <a href="#" class="absolute bottom-7.5 right-7.5 max-md:hidden">
               <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" />
             </a>
           </div>
-        </a>
+        </div>
         {% endfor %}
 
         <button class="show-more-btn">Загрузить больше</button>
       </div>
 
-      <button class="mt-17.5 show-more-btn-accent">Национальный совет (Милли Шура) всемирного конгресса татар</button>
+      <button class="mt-10 md:mt-17.5 show-more-btn-accent">Национальный совет (Милли Шура) всемирного конгресса татар</button>
     </div>
   </div>
 </section>
