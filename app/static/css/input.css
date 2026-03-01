@@ -40,6 +40,9 @@
     --tracking-1: 0.01em;
     --tracking-2: 0.02em;
     --tracking-4: 0.04em;
+
+    --breakpoint-m475: 475px;
+    --breakpoint-m576: 576px;
 }
 
 @media (width <= 768px) {
