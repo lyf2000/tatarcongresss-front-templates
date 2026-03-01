@@ -1,50 +1,52 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-25">
+<section class="mb-10 md:mb-25">
   {% include 'blocks/breadcrumbs.html' %}
 
   <div class="flex gap-x-22">
-    {% include 'blocks/about-nav.html' %}
+    <div class="max-lg:hidden shrink-0 w-65">
+      {% include 'blocks/about-nav.html' %}
+    </div>
 
     <div class="font-light">
       <h1 class="text-page-header mb-14.5">Об организации</h1>
-      <p class="text-xl leading-[1.4]">
+      <p class="text-lg md:text-xl leading-[1.4]">
         Об организации
         Всемирный конгресс татар — это международная общественная организация, объединяющая татарские национально-культурные центры и активистов по всему миру. Конгресс служит координационным центром татарских организаций, продвигает татарскую культуру, язык и традиции, а также поддерживает связи между татарами, живущими в России и за рубежом.
         <br/><br/>
         Возглавляет работу Всемирного конгресса татар заместитель Премьер-министра Республики Татарстан, председатель Национального совета ВКТ Василь Габделгаязович Шайхразиев.
       </p>
 
-      <h3 class="mt-17.5 font-semibold text-3xl -tracking-4 mb-10">Масштаб и структура</h3>
-      <div class="text-xl leading-[1.4] space-y-10">
-        <div class="flex items-center">
+      <h3 class="mt-10 md:mt-17.5 font-semibold text-block-header mb-7.5 md:mb-10">Масштаб и структура</h3>
+      <div class="text-lg md:text-xl leading-[1.4] space-y-10">
+        <div class="flex items-start md:items-center">
           <img src="./static/imgs/icons/about/people.svg" alt="" width="44" height="44" />
 
-          <div class="h-8 w-px bg-accent ml-6.75 mr-8"></div>
+          <div class="h-8 w-px bg-accent ml-2 md:ml-6.75 mr-3 md:mr-8 max-md:mt-2.5"></div>
 
           <p>
-            518 общественных организаций в составе ВКТ, представляющих татарские<br/>
+            518 общественных организаций в составе ВКТ, представляющих татарские<br class="max-md:hidden"/>
             сообщества из Российской Федерации и 43 стран мира.
           </p>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-start md:items-center">
           <img src="./static/imgs/icons/about/global-search.svg" alt="" width="44" height="44" />
 
-          <div class="h-8 w-px bg-accent ml-6.75 mr-8"></div>
+          <div class="h-8 w-px bg-accent ml-2 md:ml-6.75 mr-3 md:mr-8 max-md:mt-2.5"></div>
 
           <p>В России ВКТ работает через региональные отделения.</p>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-start md:items-center">
           <img src="./static/imgs/icons/about/courthouse.svg" alt="" width="44" height="44" />
 
-          <div class="h-8 w-px bg-accent ml-6.75 mr-8"></div>
+          <div class="h-8 w-px bg-accent ml-2 md:ml-6.75 mr-3 md:mr-8 max-md:mt-2.5"></div>
 
           <p>Штаб-квартира — в Казани, Республика Татарстан.</p>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-start md:items-center">
           <img src="./static/imgs/icons/about/share.svg" alt="" width="44" height="44" />
 
-          <div class="h-8 w-px bg-accent ml-6.75 mr-8"></div>
+          <div class="h-8 w-px bg-accent ml-2 md:ml-6.75 mr-3 md:mr-8 max-md:mt-2.5"></div>
 
           <p>
             Ежегодно проводятся мероприятия, конференции, акции и форумы,<br/>
@@ -53,21 +55,21 @@
         </div>
       </div>
 
-      <h3 class="mt-17.5 font-semibold text-3xl -tracking-4 mb-10">Миссия организации</h3>
+      <h3 class="mt-10 md:mt-17.5 font-semibold text-block-header mb-7.5 md:mb-10">Миссия организации</h3>
       <p>Миссия Всемирного конгресса татар (ВКТ) заключается в том, чтобы служить международным координационным центром и объединяющим началом для татарских национально-культурных центров и активистов по всему миру. Организация стремится сохранять, развивать и продвигать татарскую культуру, язык и традиции среди татарской диаспоры и населения в целом.</p>
 
-      <h3 class="mt-17.5 font-semibold text-3xl -tracking-4 mb-10">Основные цели ВКТ</h3>
-      <div class="space-y-12.5">
-        <div class="relative pl-17.5 text-xl leading-[1.4] pb-4.5">
-          <span class="absolute top-0 left-0 w-12.5 text-[50px] leading-none">01</span>
+      <h3 class="mt-10 md:mt-17.5 font-semibold text-block-header mb-7.5 md:mb-10">Основные цели ВКТ</h3>
+      <div class="space-y-12.5 text-lg md:text-xl leading-[1.4]">
+        <div class="relative pl-16 md:pl-17.5 pb-4.5">
+          <span class="absolute top-0 left-0 w-13.5 md:w-12.5 text-[38px] md:text-[50px] leading-none">01</span>
           <p class="mb-2 font-semibold">Объединение и координация</p>
           <p>Выступать в качестве центра, который объединяет татарские организации и активистов со всего мира, обеспечивая эффективное взаимодействие</p>
 
           <div class="absolute bottom-0 left-0 h-px w-41.5 bg-accent"></div>
         </div>
 
-        <div class="relative pl-17.5 text-xl leading-[1.4] pb-4.5">
-          <span class="absolute top-0 left-0 w-12.5 text-[50px] leading-none">02</span>
+        <div class="relative pl-16 md:pl-17.5 pb-4.5">
+          <span class="absolute top-0 left-0 w-13.5 md:w-12.5 text-[38px] md:text-[50px] leading-none">02</span>
           <p class="mb-2 font-semibold">Продвижение культуры и языка</p>
           <p>Активно работать над продвижением и популяризацией татарской культуры,
             языка и богатых традиций на международной арене.</p>
@@ -75,8 +77,8 @@
           <div class="absolute bottom-0 left-0 h-px w-41.5 bg-accent"></div>
         </div>
 
-        <div class="relative pl-17.5 text-xl leading-[1.4] pb-4.5">
-          <span class="absolute top-0 left-0 w-12.5 text-[50px] leading-none">03</span>
+        <div class="relative pl-16 md:pl-17.5 pb-4.5">
+          <span class="absolute top-0 left-0 w-13.5 md:w-12.5 text-[38px] md:text-[50px] leading-none">03</span>
           <p class="mb-2 font-semibold">Поддержание связей</p>
           <p>Укреплять и поддерживать тесные связи между татарами, проживающими
             как в Российской Федерации, так и за ее пределами (в зарубежной диаспоре), способствуя их сплоченности и взаимопониманию.</p>
@@ -85,7 +87,7 @@
         </div>
       </div>
 
-      <button class="mt-22 bg-accent text-white font-semibold flex items-center justify-center h-15 w-full">История всемирного конгресса татар</button>
+      <button class="mt-10 md:mt-22 show-more-btn-accent">История всемирного конгресса татар</button>
     </div>
   </div>
 </section>
