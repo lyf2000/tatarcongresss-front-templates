@@ -1295,6 +1295,9 @@
   .pb-2\.75 {
     padding-bottom: calc(var(--spacing) * 2.75);
   }
+  .pb-3\.5 {
+    padding-bottom: calc(var(--spacing) * 3.5);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1694,6 +1697,11 @@
   .max-lg\:col-span-full {
     @media (width < 64rem) {
       grid-column: 1 / -1;
+    }
+  }
+  .max-lg\:mt-2\.5 {
+    @media (width < 64rem) {
+      margin-top: calc(var(--spacing) * 2.5);
     }
   }
   .max-lg\:mt-4\.5 {
@@ -2231,6 +2239,11 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .lg\:mb-0\.5 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0.5);
+    }
+  }
   .lg\:mb-0\.75 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 0.75);
@@ -2482,6 +2495,11 @@
       padding-inline: calc(var(--spacing) * 4.5);
     }
   }
+  .lg\:px-5 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:px-7\.5 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 7.5);
@@ -2500,6 +2518,11 @@
   .lg\:py-24 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:pt-3\.5 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 3.5);
     }
   }
   .lg\:pt-5 {
@@ -2540,6 +2563,11 @@
   .lg\:pr-21 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 21);
+    }
+  }
+  .lg\:pb-4 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 4);
     }
   }
   .lg\:pb-6\.5 {
