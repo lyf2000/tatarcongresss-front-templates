@@ -1,16 +1,16 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-10 lg:mb-17.5 flex gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
     {% include 'blocks/breadcrumbs.html' %}
 
     <h1 class="text-page-header mb-7.5">Новости всемирного конгресса татар</h1>
 
-    <div class="aspect-1024/420 text-white">
+    <div class="aspect-1024/420 text-white max-sm:-mx-4.75">
       {% include 'blocks/news-main-banner.html' %}
     </div>
 
-    <div class="my-10">
+    <div class="my-5 lg:my-10">
       {% include 'blocks/tabs-2.html' %}
     </div>
 
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
@@ -35,11 +35,11 @@
   </div>
 </section>
 
-<section class="mb-12.5">
+<section class="mb-10 lg:mb-12.5">
   {% include 'blocks/congress-media.html' %}
 </section>
 
-<section class="mb-17.5">
+<section class="mb-10 lg:mb-17.5">
   {% include 'blocks/congress-projects.html' %}
 </section>
 
