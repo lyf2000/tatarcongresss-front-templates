@@ -1,33 +1,30 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-10 lg:mb-17.5 flex max-lg:flex-col gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
     {% include 'blocks/breadcrumbs.html' %}
 
     <h1 class="text-page-header mb-7.5">Съезды и форумы</h1>
 
-    <div class="aspect-1024/420 text-white">
-      {% include 'blocks/news-main-banner.html' %}
-    </div>
-
-    <div class="mt-7.5 mb-10">
+    <div class="mb-10">
       {% include 'blocks/tabs-2.html' %}
     </div>
 
     {% for _ in range(4) %}
-    <div class="flex gap-x-2.5 mb-10 min-h-60">
-      <a href="#" class="shrink-0 w-60 rounded-sm bg-white grid place-content-center">
+    <div class="flex max-lg:flex-col gap-x-2.5 gap-y-1 mb-5 lg:mb-10 min-h-60">
+      <a href="#" class="shrink-0 w-full lg:w-60 max-lg:h-45 rounded-sm bg-white grid place-content-center">
         <img src="./static/imgs/mocks/vftm.png" alt="" class="max-w-full max-h-full object-contain" />
       </a>
 
-      <div class="rounded-sm bg-white p-7.5 pt-5.25 relative">
-        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="absolute top-5 right-5" />
+      <div class="rounded-sm bg-white px-4 py-5 lg:p-7.5 lg:pt-5.25 relative">
+        <img src="./static/imgs/icons/arrow-up-right-black.svg" alt="" width="50" height="50" class="absolute top-5 right-5 max-lg:hidden" />
 
-        <p class="mb-3 text-accent uppercase font-medium text-tiny"><span class="font-bold">форум</span> · бизнес</p>
-        <p class="font-semibold pr-14 text-2xl mb-7">Форум «Деловые партнёры Татарстана»</p>
-        <p class="mb-5.75 font-medium leading-[1.4]">Ежегодное международное мероприятие, которое объединяет татарских предпринимателей из разных регионов России и стран</p>
+        <p class="mb-1.75 lg:mb-3 text-accent uppercase font-medium text-[8px] lg:text-tiny"><span class="font-bold">форум</span> · бизнес</p>
+        <p class="font-semibold lg:pr-14 text-xl lg:text-2xl mb-5 lg:mb-7">Форум «Деловые партнёры Татарстана»</p>
 
-        <div class="flex flex-wrap gap-2 font-semibold text-xs">
+        <p class="max-lg:text-sm font-medium leading-[1.4]">Ежегодное международное мероприятие, которое объединяет татарских предпринимателей из разных регионов России и стран</p>
+
+        <div class="hidden mt-5.75 lg:flex flex-wrap gap-2 font-semibold text-xs">
           <a href="#" class="rounded-sm border border-button pt-2.25 pb-2.75 px-3.75">О форуме</a>
           <a href="#" class="rounded-sm border border-button pt-2.25 pb-2.75 px-3.75">Новости форума</a>
           <a href="#" class="rounded-sm border border-button pt-2.25 pb-2.75 px-3.75">Участники</a>
@@ -43,7 +40,7 @@
     {% include 'blocks/pagination.html' %}
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
@@ -54,11 +51,11 @@
   </div>
 </section>
 
-<section class="mb-12.5">
+<section class="mb-10 lg:mb-12.5">
   {% include 'blocks/congress-media.html' %}
 </section>
 
-<section class="mb-17.5">
+<section class="mb-10 lg:mb-17.5">
   {% include 'blocks/congress-projects.html' %}
 </section>
 
