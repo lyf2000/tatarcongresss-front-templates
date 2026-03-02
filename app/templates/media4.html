@@ -1,16 +1,16 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-10 lg:mb-17.5 flex gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
     {% include 'blocks/breadcrumbs.html' %}
 
-    <h1 class="text-page-header mb-7.5">Медиа · Фотоальбомы</h1>
+    <h1 class="text-page-header">Медиа · Фотоальбомы</h1>
 
-    <div class="mt-7.5 mb-10">
+    <div class="mt-4.5 lg:mt-7.5 mb-5 lg:mb-10">
       {% include 'blocks/tabs-2.html' %}
     </div>
 
-    <div class="grid grid-cols-3 gap-5">
+    <div class="grid m576:grid-cols-2 xl:grid-cols-3 gap-5">
       {% for _ in range(9) %}
       {% include 'blocks/media-card.html' %}
       {% endfor %}
@@ -20,7 +20,7 @@
     {% include 'blocks/pagination.html' %}
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<section class="relative mb-7.5">
+<section class="relative lg:mb-7.5">
   <h3 class="mb-8 text-3xl -tracking-4">Новости</h3>
 
   {% include 'blocks/news-section.html' %}

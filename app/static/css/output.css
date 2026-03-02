@@ -612,6 +612,12 @@
   .ml-auto {
     margin-left: auto;
   }
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
   .line-clamp-5 {
     overflow: hidden;
     display: -webkit-box;
@@ -2223,9 +2229,19 @@
       color: var(--color-black);
     }
   }
+  .m475\:grid-cols-2 {
+    @media (width >= 475px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .m576\:w-70 {
     @media (width >= 576px) {
       width: calc(var(--spacing) * 70);
+    }
+  }
+  .m576\:grid-cols-2 {
+    @media (width >= 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .sm\:absolute {
@@ -2579,6 +2595,11 @@
   .lg\:mt-5\.75 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 5.75);
+    }
+  }
+  .lg\:mt-7\.5 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 7.5);
     }
   }
   .lg\:mt-9\.5 {
