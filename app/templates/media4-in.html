@@ -1,13 +1,13 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5">
+<section class="mb-10 lg:mb-17.5">
   {% include 'blocks/breadcrumbs.html' %}
 
-  <div class="flex gap-x-34">
-    <div class="grow">
-      <div class="pb-20 space-y-15 mb-2.5 news-in-wrapper">
+  <div class="flex gap-x-10 xl:gap-x-34">
+    <div class="grow min-w-0">
+      <div class="pb-10 lg:pb-20 space-y-10 lg:space-y-15 mb-2.5 news-in-wrapper lg:pr-14.5">
         <div>
-          <div class="relative aspect-908/400 mb-10.25 img">
+          <div class="relative aspect-908/400 mb-4 lg:mb-10.25 img max-lg:-mx-4.25">
             <img src="./static/imgs/mocks/9.png" alt="" class="object-cover size-full rounded-sm" />
 
             <div class="flex gap-x-2.5 absolute left-2.5 bottom-2.5">
@@ -26,10 +26,10 @@
             </div>
           </div>
 
-          <p class="text-xs mb-7.75 uppercase text-accent"><span class="font-bold">Новость</span> · встреча</p>
-          <h1 class="font-semibold text-page-header leading-[1.2] mb-3">Руководитель Исполнительного комитета Всемирного конгресса татар Данис Шакиров встретился с ректором Казанского энергетического университета Эдвардом Абдуллазяновым</h1>
+          <p class="text-xs mb-4 lg:mb-7.75 uppercase text-accent"><span class="font-bold">Новость</span> · встреча</p>
+          <h1 class="font-semibold text-page-header mb-1.5 lg:mb-3">Руководитель Исполнительного комитета Всемирного конгресса татар Данис Шакиров встретился с ректором Казанского энергетического университета Эдвардом Абдуллазяновым</h1>
 
-          <p class="font-medium text-xs text-thumb-button mb-15">14 ноября 2025 · 12:32</p>
+          <p class="font-medium text-xs text-thumb-button mb-10 lg:mb-15">14 ноября 2025 · 12:32</p>
         </div>
 
         <div class="space-y-5">
@@ -61,7 +61,7 @@
       {% include 'blocks/comments-block.html' %}
     </div>
 
-    <div class="space-y-5 w-82 shrink-0">
+    <div class="space-y-5 w-65 xl:w-82 shrink-0 max-lg:hidden">
       {% for _ in range(4) %}
       {% include 'blocks/media-card.html' %}
       {% endfor %}
@@ -69,8 +69,9 @@
   </div>
 </section>
 
-<section class="mb-7.5">
-  <h4 class="text-3xl font-light mb-7">Другие новости</h4>
+<section class="lg:mb-7.5">
+  <h3 class="mb-5 lg:mb-8 text-block-header font-semibold">Другие новости</h3>
+
   {% include 'blocks/news-section.html' %}
 </section>
 
