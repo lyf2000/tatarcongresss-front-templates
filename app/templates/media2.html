@@ -1,6 +1,6 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-10 lg:mb-17.5 flex gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
     {% include 'blocks/breadcrumbs.html' %}
 
@@ -29,9 +29,11 @@
     <p class="font-light text-lg leading-[1.4]">Федеральная газета на татарском языке, издаваемая Всемирным конгрессом татар.
       Она освещает жизнь татар в России и по всему миру, а ее основная цель — способствовать духовному объединению нации и укреплению национального самосознания.</p>
 
-    <hr class="mt-10 mb-11 text-black/10" />
+    <hr class="max-lg:hidden mt-10 mb-11 text-black/10" />
 
-    <h3 class="text-2xl font-semibold mb-7.5">Выпуски газеты</h3>
+    <button class="show-more-btn bg-accent! text-white mt-5 w-full lg:hidden!">Подписаться на газету</button>
+
+    <h3 class="max-lg:mt-10 text-2xl font-semibold mb-5 lg:mb-7.5">Выпуски газеты</h3>
     <div class="flex items-end gap-x-8">
       <form class="relative border-b border-black/10 grow">
         <button type="submit" class="absolute left-0 top-1/2 -translate-y-1/2 size-4.5">
@@ -41,28 +43,28 @@
         <input type="text" placeholder="Поиск по выпускам" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
       </form>
 
-      <button class="show-more-btn bg-accent! text-white w-50!">Подписаться на газету</button>
+      <button class="show-more-btn bg-accent! text-white w-50! max-lg:hidden!">Подписаться на газету</button>
     </div>
 
-    <div class="my-10">
+    <div class="my-5 lg:my-10">
       {% include 'blocks/tabs-2-slider.html' %}
     </div>
 
-    <div class="grid grid-cols-4 gap-y-7.5 gap-x-5 mb-7.5">
+    <div class="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-y-7.5 gap-x-5 mb-5 lg:mb-7.5">
       {% for _ in range(8) %}
       <a href="#" class="flex flex-col">
         <img src="./static/imgs/mocks/10.png" alt="" class="rounded-sm aspect-240/374 w-full" />
-        <p class="mb-1.25 font-bold -tracking-2 mt-4">Январь 2025</p>
-        <p class="text-tiny text-thumb-button">1,1 тыс просмотров · 8 дней назад</p>
+        <p class="mb-0.5 lg:mb-1.25 font-bold -tracking-2 mt-2 lg:mt-4">Январь 2025</p>
+        <p class="text-tiny text-thumb-button font-medium">1,1 тыс просмотров · 8 дней назад</p>
       </a>
       {% endfor %}
     </div>
 
-    <button class="show-more-btn mb-7.5">Загрузить больше</button>
+    <button class="show-more-btn mb-5 lg:mb-7.5">Загрузить больше</button>
     {% include 'blocks/pagination.html' %}
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
