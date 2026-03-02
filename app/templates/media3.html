@@ -1,13 +1,13 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-10 lg:mb-17.5 flex gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
     {% include 'blocks/breadcrumbs.html' %}
 
-    <h1 class="text-page-header mb-7.5">Медиа · Газета «Халкым минем»</h1>
+    <h1 class="text-page-header mb-7.5">Медиа · Журнал «Туган җир»</h1>
 
-    <div class="relative aspect-908/400 mb-10.25 img">
-      <img src="./static/imgs/mocks/9.png" alt="" class="object-cover size-full rounded-sm" />
+    <div class="relative aspect-908/400 mb-10.25 img max-lg:-mx-4.25">
+      <img src="./static/imgs/mocks/9.png" alt="" class="object-cover size-full lg:rounded-sm" />
 
       <div class="flex gap-x-2.5 absolute left-2.5 bottom-2.5">
         <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-11 grid place-content-center">
@@ -30,11 +30,11 @@
       и русском языках. Он является печатным органом краеведческого движения
       и публикует материалы по истории, культуре и языку татарского народа. </p>
 
-    <hr class="mt-10 mb-11 text-black/10" />
+    <hr class="max-lg:hidden mt-10 mb-11 text-black/10" />
 
-    <div class="embla relative mb-17.5">
+    <div class="max-lg:mt-7.5 embla relative mb-10 lg:mb-17.5">
       <div class="flex justify-between items-center mb-6.75 min-h-5">
-        <h4 class="text-3xl font-semibold">Лучшие материалы</h4>
+        <h4 class="text-block-header font-semibold">Лучшие материалы</h4>
 
         <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
           <button class="embla__prev flex items-center justify-center aspect-square">
@@ -69,8 +69,7 @@
       <a href="#" class="show-more-btn mt-5">Все материалы</a>
     </div>
 
-
-    <h3 class="text-2xl font-semibold mb-7.5">Архив журнала</h3>
+    <h3 class="text-2xl font-semibold mb-5 lg:mb-7.5">Архив журнала</h3>
     <form class="relative border-b border-black/10 grow">
       <button type="submit" class="absolute left-0 top-1/2 -translate-y-1/2 size-4.5">
         <img src="./static/imgs/icons/loop.svg" alt="" width="18" height="18">
@@ -79,11 +78,11 @@
       <input type="text" placeholder="Поиск по выпускам" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
     </form>
 
-    <div class="my-10">
+    <div class="my-5 lg:my-10">
       {% include 'blocks/tabs-2.html' %}
     </div>
 
-    <div class="grid grid-cols-4 gap-y-7.5 gap-x-5 mb-7.5">
+    <div class="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-y-7.5 gap-x-5 mb-5 lg:mb-7.5">
       {% for _ in range(8) %}
       <a href="#" class="flex flex-col">
         <img src="./static/imgs/mocks/10.png" alt="" class="rounded-sm aspect-240/374 w-full" />
@@ -97,7 +96,7 @@
     {% include 'blocks/pagination.html' %}
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
@@ -108,8 +107,8 @@
   </div>
 </section>
 
-<section class="relative mb-7.5">
-  <h3 class="mb-8 text-3xl -tracking-4">Новости</h3>
+<section class="relative lg:mb-7.5">
+  <h3 class="mb-8 text-block-header">Новости</h3>
 
   {% include 'blocks/news-section.html' %}
 </section>
