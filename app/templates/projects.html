@@ -1,20 +1,17 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5 flex gap-x-22">
+<section class="mb-7.5">
+  {% include 'blocks/breadcrumbs.html' %}
+  <h1 class="text-page-header mb-7.5">Проекты всемирного конгресса татар</h1>
+
+  <div class="mb-7.5 lg:mb-10">
+    {% include 'blocks/tabs-2.html' %}
+  </div>
+</section>
+
+<section class="mb-10 lg:mb-17.5 flex gap-x-10 xl:gap-x-22">
   <div class="grow min-w-0">
-    {% include 'blocks/breadcrumbs.html' %}
-
-    <h1 class="text-page-header mb-7.5">Проекты всемирного конгресса татар</h1>
-
-    <div class="aspect-1024/420 text-white">
-      {% include 'blocks/news-main-banner.html' %}
-    </div>
-
-    <div class="mt-7.5  mb-10">
-      {% include 'blocks/tabs-2.html' %}
-    </div>
-
-    <div class="grid grid-cols-2 gap-y-10 gap-x-5 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-y-10 gap-x-5 mb-5 lg:mb-10">
       {% for _ in range(8) %}
       {% include 'blocks/project-card.html' %}
       {% endfor %}
@@ -24,7 +21,7 @@
     {% include 'blocks/pagination.html' %}
   </div>
 
-  <div class="shrink-0 w-65 space-y-7.5">
+  <div class="shrink-0 w-65 space-y-7.5 max-lg:hidden">
     {% include 'blocks/about-nav.html' %}
 
     <div class="rounded-sm overflow-hidden aspect-square bg-white"></div>
@@ -35,11 +32,11 @@
   </div>
 </section>
 
-<section class="mb-12.5">
+<section class="mb-10 lg:mb-12.5">
   {% include 'blocks/congress-media.html' %}
 </section>
 
-<section class="mb-17.5">
+<section class="mb-10 lg:mb-17.5">
   {% include 'blocks/congress-projects.html' %}
 </section>
 

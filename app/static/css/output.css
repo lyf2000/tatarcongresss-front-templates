@@ -220,6 +220,9 @@
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
+  .inset-x-4 {
+    inset-inline: calc(var(--spacing) * 4);
+  }
   .inset-x-7\.5 {
     inset-inline: calc(var(--spacing) * 7.5);
   }
@@ -634,6 +637,14 @@
   .size-15 {
     width: calc(var(--spacing) * 15);
     height: calc(var(--spacing) * 15);
+  }
+  .size-16 {
+    width: calc(var(--spacing) * 16);
+    height: calc(var(--spacing) * 16);
+  }
+  .size-19\.5 {
+    width: calc(var(--spacing) * 19.5);
+    height: calc(var(--spacing) * 19.5);
   }
   .size-22\.5 {
     width: calc(var(--spacing) * 22.5);
@@ -2266,6 +2277,16 @@
       }
     }
   }
+  .lg\:inset-x-7\.5 {
+    @media (width >= 64rem) {
+      inset-inline: calc(var(--spacing) * 7.5);
+    }
+  }
+  .lg\:bottom-7\.5 {
+    @media (width >= 64rem) {
+      bottom: calc(var(--spacing) * 7.5);
+    }
+  }
   .lg\:left-5 {
     @media (width >= 64rem) {
       left: calc(var(--spacing) * 5);
@@ -2529,6 +2550,12 @@
       display: none !important;
     }
   }
+  .lg\:size-22 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 22);
+      height: calc(var(--spacing) * 22);
+    }
+  }
   .lg\:h-16 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 16);
@@ -2629,6 +2656,11 @@
       gap: calc(var(--spacing) * 5);
     }
   }
+  .lg\:gap-7\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 7.5);
+    }
+  }
   .lg\:space-y-5 {
     @media (width >= 64rem) {
       :where(& > :not(:last-child)) {
@@ -2683,6 +2715,11 @@
   .lg\:gap-x-10\.75 {
     @media (width >= 64rem) {
       column-gap: calc(var(--spacing) * 10.75);
+    }
+  }
+  .lg\:gap-y-10 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 10);
     }
   }
   .lg\:gap-y-12 {
