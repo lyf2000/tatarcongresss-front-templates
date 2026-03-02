@@ -49,3 +49,48 @@
         }
     }
 }
+
+@media (width < 768px) {
+    .table {
+        border-spacing: 0 0;
+
+        thead {
+            display: none;
+        }
+
+        tbody {
+            td {
+                background-color: #fff !important;
+                padding: 0;
+            }
+
+            tr {
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                margin-top: 20px;
+                @apply divide-y divide-grey;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                td {
+                    padding: 14px 15px;
+
+                    &:not(:first-child) {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .time,
+        .month {
+            @apply text-base font-medium inline-block;
+        }
+    }
+}

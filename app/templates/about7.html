@@ -1,15 +1,16 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-25">
+<section class="mb-10 lg:mb-25">
   {% include 'blocks/breadcrumbs.html' %}
 
   <div class="flex gap-x-10 xl:gap-x-22">
-    <div class="shrink-0 w-65">
+    <div class="max-lg:hidden shrink-0 w-65">
       {% include 'blocks/about-nav.html' %}
     </div>
 
     <div class="grow">
-      <h1 class="text-page-header mb-15">План работы конгресса на 2025 год</h1>
+      <h1 class="text-page-header mb-5 lg:mb-15">План работы конгресса на 2025 год</h1>
+
       <table class="table">
         <thead>
           <tr>
@@ -23,16 +24,20 @@
           {% for _ in range(3) %}
           <tr>
             <td>
+              <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ЧАРА ИСЕМЕ</div>
               <p class="title">Татарстан Республикасының «Татар халкының милли үзенчәлеген саклау (2024-2026 елларга)» дәүләт программасын гамәлгә ашыру буенча эш</p>
             </td>
             <td>
+              <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ВАКЫТ</div>
               <span class="time">22-25</span>
               <span class="month">декабрь</span>
             </td>
             <td>
+              <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ҮТКӘРҮ УРЫНЫ</div>
               <p>Татарстан Республикасы, Россия Федерациясе төбәкләре, чит илләр</p>
             </td>
             <td>
+              <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">Җаваплылар</div>
               <p>Татарстан Республикасы министрлыклары һәм ведомстволары, Бөтендөнья татар конгрессы Башкарма комитеты</p>
             </td>
           </tr>
@@ -40,7 +45,7 @@
         </tbody>
       </table>
 
-      <h3 class="mt-15 mb-6.5 text-3xl font-semibold -tracking-4">Масштабные проекты всемирного конгресса татар</h3>
+      <h3 class="mt-10 lg:mt-15 mb-5 lg:mb-6.5 text-block-header font-semibold">Масштабные проекты всемирного конгресса татар</h3>
       <table class="table">
         <thead>
         <tr>
@@ -54,16 +59,20 @@
         {% for _ in range(7) %}
         <tr>
           <td>
+            <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ЧАРА ИСЕМЕ</div>
             <p class="title">Татарстан Республикасының «Татар халкының милли үзенчәлеген саклау (2024-2026 елларга)» дәүләт программасын гамәлгә ашыру буенча эш</p>
           </td>
           <td>
+            <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ВАКЫТ</div>
             <span class="time">22-25</span>
             <span class="month">декабрь</span>
           </td>
           <td>
+            <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">ҮТКӘРҮ УРЫНЫ</div>
             <p>Татарстан Республикасы, Россия Федерациясе төбәкләре, чит илләр</p>
           </td>
           <td>
+            <div class="md:hidden mb-2.5 uppercase font-bold text-thumb-button text-tiny">Җаваплылар</div>
             <p>Татарстан Республикасы министрлыклары һәм ведомстволары, Бөтендөнья татар конгрессы Башкарма комитеты</p>
           </td>
         </tr>
@@ -71,11 +80,11 @@
         </tbody>
       </table>
 
-      <button class="show-more-btn my-7.5">Загрузить больше</button>
+      <button class="show-more-btn max-lg:mt-5 my-7.5">Загрузить больше</button>
 
       {% include 'blocks/pagination.html' %}
 
-      <button class="mt-25 show-more-btn-accent">Документы</button>
+      <button class="mt-10 lg:mt-25 show-more-btn-accent">Документы</button>
     </div>
   </div>
 </section>

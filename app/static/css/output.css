@@ -469,9 +469,6 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-6\.5 {
-    margin-bottom: calc(var(--spacing) * 6.5);
-  }
   .mb-6\.75 {
     margin-bottom: calc(var(--spacing) * 6.75);
   }
@@ -2214,6 +2211,11 @@
       margin-top: calc(var(--spacing) * 13.75);
     }
   }
+  .lg\:mt-15 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 15);
+    }
+  }
   .lg\:mt-17\.5 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 17.5);
@@ -2252,6 +2254,11 @@
   .lg\:mb-6 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:mb-6\.5 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 6.5);
     }
   }
   .lg\:mb-6\.25 {
@@ -3373,16 +3380,36 @@ button, textarea, input {
 }
 @media (width < 768px) {
   .table {
-    border-spacing: 0 20px;
+    border-spacing: 0 0;
     thead {
       display: none;
     }
     tbody {
       td {
         background-color: #fff !important;
+        padding: 0;
       }
       tr {
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-top: 20px;
+        :where(& > :not(:last-child)) {
+          --tw-divide-y-reverse: 0;
+          border-bottom-style: var(--tw-border-style);
+          border-top-style: var(--tw-border-style);
+          border-top-width: calc(1px * var(--tw-divide-y-reverse));
+          border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+        }
+        :where(& > :not(:last-child)) {
+          border-color: var(--color-grey);
+        }
+        &:first-child {
+          margin-top: 0;
+        }
         td {
+          padding: 14px 15px;
           &:not(:first-child) {
             &:before {
               display: none;
@@ -3390,6 +3417,13 @@ button, textarea, input {
           }
         }
       }
+    }
+    .time, .month {
+      display: inline-block;
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
     }
   }
 }
