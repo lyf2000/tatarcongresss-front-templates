@@ -86,5 +86,7 @@ document.querySelectorAll('.embla').forEach(wrapperNode => {
             .on('select', toggleDotButtonsActive)
     }
 
-    addDotButtonAndClickHandlers(emblaApi, dotsNode)
+    if (dotsNode) {
+        addDotButtonAndClickHandlers(emblaApi, dotsNode)
+    }
 });

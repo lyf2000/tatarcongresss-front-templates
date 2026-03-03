@@ -1,34 +1,54 @@
 {% include 'blocks/header.html' %}
 
-<section class="mb-17.5">
+<section class="mb-10 lg:mb-17.5">
   {% include 'blocks/breadcrumbs.html' %}
 
   <div class="flex gap-x-10 xl:gap-x-22">
     <div class="grow min-w-0">
-      <img src="./static/imgs/mocks/1.png" alt="" class="object-cover aspect-1024/400 rounded-sm mb-7.75" />
+      <img src="./static/imgs/mocks/1.png" alt="" class="object-cover aspect-1024/400 lg:rounded-sm mb-4 lg:mb-7.75 max-lg:-mx-4.25 max-w-[stretch]" />
 
-      <p class="text-accent uppercase text-tiny font-medium mb-3.25"><span class="font-bold">форум</span> · бизнес</p>
+      <p class="text-accent uppercase text-tiny font-medium mb-4 lg:mb-3.25"><span class="font-bold">форум</span> · бизнес</p>
 
-      <h1 class="text-page-header mb-8">24-26 ноября в Казани XVIII форум «Деловые партнёры Татарстана»</h1>
+      <h1 class="text-page-header lg:mb-8">24-26 ноября в Казани XVIII форум «Деловые партнёры Татарстана»</h1>
+      <p class="text-tiny font-medium text-thumb-button mb-5 mt-1.25 lg:hidden">14 ноября 2025  ·  12:32</p>
 
-      <p class="text-[22px] leading-[1.4]">Ежегодное международное мероприятие, которое объединяет татарских предпринимателей из разных регионов России и стран</p>
+      <p class="text-xl lg:text-[22px] leading-[1.4]">Ежегодное международное мероприятие, которое объединяет татарских предпринимателей из разных регионов России и стран</p>
 
-      <hr class="text-black/10 mb-10 mt-9.5" />
+      <div class="lg:hidden mt-5">
+        <button class="show-more-btn bg-accent! text-white">Участвовать</button>
 
-      <div class="mb-17.5">
-        <h4 class="text-3xl font-semibold -tracking-4 mb-7.5">О форуме</h4>
-        <p class="text-xl leading-[1.4] font-light">
+        <div class="flex gap-x-2.5 mt-5">
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/tg-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/wa-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/vk-black.svg" alt="" width="14" height="14" />
+          </a>
+          <a href="#" rel="nofollow" target="_blank" class="bg-white rounded-full size-9 grid place-content-center">
+            <img src="./static/imgs/icons/social/max-black.svg" alt="" width="14" height="14" />
+          </a>
+        </div>
+      </div>
+
+      <hr class="text-black/10 my-10" />
+
+      <div class="mb-10 lg:mb-17.5">
+        <h4 class="text-block-header font-semibold mb-5 lg:mb-7.5">О форуме</h4>
+        <p class="text-lg lg:text-xl leading-[1.4] font-light">
           С 2004 года в течение восьми лет в Республике Татарстан проходили форумы «Деловые партнеры Татарстана». Бизнес-сообщество татар из регионов РФ и стран зарубежья способствовали консолидации и координации торгово-экономической деятельности Республики Татарстан с хозяйствующими субъектами за его пределами. В этот период в регионах РФ, странах ближнего и дальнего зарубежья были созданы более сорока торговых домов, торгово-экономических и полномочных представительства РТ.
           <br/><br/>
           В дальнейшем по инициативе Исполкома ВКТ и бизнесменов татар РФ и стран зарубежья была создана Всемирная ассоциация содействия татарским предпринимателям. Участие татарского бизнеса в процессах возрождения национальной культуры, языка, самобытности народа стало хорошей традицией, свидетельством этого являются многочисленные мероприятия межрегионального и международного значения, консолидирующие татарскую нацию в современном этапе. С 2014 года исходя из сложившихся новых экономических реалий в стране, требующих коренных изменений межрегиональных торгово-экономических связей, в первую очередь в сфере производства и реализации сельскохозяйственной продукции, Исполком Всемирного конгресса татар возобновил проведение ежегодного форума «Деловые партнеры Татарстана».
         </p>
 
-        <a href="#" class="show-more-btn mt-7.5">Показать полностью</a>
+        <a href="#" class="show-more-btn mt-5 lg:mt-7.5">Показать полностью</a>
       </div>
 
-      <div class="mb-17.5 embla relative">
+      <div class="mb-10 lg:mb-17.5 embla relative">
         <div class="flex justify-between items-center mb-6.75 min-h-5">
-          <h4 class="text-3xl font-semibold -tracking-4">Новости форума</h4>
+          <h4 class="text-block-header font-semibold">Новости форума</h4>
 
           <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
             <button class="embla__prev flex items-center justify-center aspect-square">
@@ -63,17 +83,66 @@
         <a href="#" class="show-more-btn mt-5">Все новости форума</a>
       </div>
 
-      <div class="mb-17.5">
-        <h4 class="-tracking-4 font-semibold text-3xl mb-6">Программа форума 2025</h4>
+      <div class="mb-10 lg:mb-17.5">
+        <h4 class="text-block-header font-semibold mb-5 lg:mb-6">Программа форума 2025</h4>
+
+        <div class="space-y-6">
+          {% for _ in range(2) %}
+          <div>
+            <h4 class="lg:text-lg font-semibold">26 ноября, воскресенье</h4>
+            <div class="rounded-sm h-0.5 bg-accent mt-1.5 mb-5 lg:my-2.5 w-full"></div>
+
+            <table class="table -tracking-2 text-xs w-full">
+              <thead>
+              <tr>
+                <th>Время</th>
+                <th>событие</th>
+                <th>локация</th>
+              </tr>
+              </thead>
+              <tbody>
+              {% for _ in range(5) %}
+              <tr>
+                <td>
+                  <div class="md:hidden mb-2 text-[8px] uppercase font-bold leading-[1.2] text-thumb-button">Время</div>
+                  <p class="text-base max-md:inline font-bold md:text-2xl">14:00</p>
+                  <span class="text-base md:text-tiny font-medium"><span>-</span> 24:00</span>
+                </td>
+                <td class="text-xs">
+                  <div class="md:hidden mb-2 text-[8px] uppercase font-bold leading-[1.2] text-thumb-button">событие</div>
+                  <p class="max-md:text-base font-bold">Приезд участников Форума</p>
+
+                  <p class="max-md:text-tiny mt-2.5">
+                    - Сельское хозяйство и животноводство<br/>
+                    - Промышленность, металлургия, машиностроение<br/>
+                    - Нефтегазовая отрасль<br/>
+                    - Сфера услуг<br/>
+                  </p>
+
+                  <p class="text-sm font-bold mt-4">Шайхразиев Василь Габтелгаязович</p>
+                  <p class="text-tiny font-medium mt-1">Заместитель Премьер-министра Республики Татарстан, Председатель Национального Совета Всемирного конгресса татар</p>
+                </td>
+                <td>
+                  <div class="md:hidden mb-2 text-[8px] uppercase font-bold leading-[1.2] text-thumb-button">локация</div>
+                  <p class="font-semibold">Зал «Достоевский»</p>
+                  <p class="font-medium">ГТРК «Корстон», ул. Ершова, 1а</p>
+                </td>
+              </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% endfor %}
+        </div>
 
         <a href="#" class="show-more-btn mt-5">Загрузить больше</a>
       </div>
 
-      <div class="mb-15 embla relative">
+      <div class="mb-10 lg:mb-15 embla relative">
         <div class="flex justify-between items-center mb-6.75 min-h-5">
-          <h4 class="text-3xl font-semibold -tracking-4">Фото и видео</h4>
+          <h4 class="text-block-header font-semibold">Фото и видео</h4>
 
-          <div class="h-10 w-20 grid grid-cols-2 max-sm:hidden">
+          <div class="h-10 w-20 grid grid-cols-2">
             <button class="embla__prev flex items-center justify-center aspect-square">
               <img src="./static/imgs/icons/slider-arrow-left.svg" alt="" width="20" height="20" />
             </button>
@@ -93,99 +162,53 @@
           </div>
         </div>
 
-        <div class="mt-5 flex justify-center gap-x-2.5 embla__dots max-sm:absolute max-sm:right-4.25 max-sm:top-1.5 max-sm:mt-0"></div>
+        <div class="mt-5 flex justify-center gap-x-2.5 embla__dots"></div>
       </div>
 
-      <div class="mb-17.5">
-        <h4 class="mb-5 text-3xl -tracking-4 font-semibold">Участники форума 2025</h4>
-        <table class="table">
-          <thead>
-          <tr>
-            <th>Регион</th>
-            <th>ФИО</th>
-            <th>Должность и Организация</th>
-            <th>Контакты</th>
-          </tr>
-          </thead>
-          <tbody>
-          {% for _ in range(3) %}
-          <tr>
-            <td>
-              <p>Российская Федерация, Алтайский край</p>
-            </td>
-            <td>
-              <p>Замалиева Татьяна Александровна</p>
-              <p>Замалиева Татьяна Александровна</p>
-            </td>
-            <td>
-              <p><span>Менеджер</span> ООО Сельхозтехника - основан в 2011</p>
-              <p><span>Генеральный директор</span> ООО Автоград - основан в 2011</p>
-            </td>
-            <td><a href="#">agroliderr@mail.ru</a></td>
-          </tr>
-          {% endfor %}
-          </tbody>
-        </table>
+      <div class="mb-10 lg:mb-17.5">
+        <h4 class="mb-5 text-block-header font-semibold">Участники форума 2025</h4>
+<!--        <table class="table">-->
+<!--          <thead>-->
+<!--          <tr>-->
+<!--            <th>Регион</th>-->
+<!--            <th>ФИО</th>-->
+<!--            <th>Должность и Организация</th>-->
+<!--            <th>Контакты</th>-->
+<!--          </tr>-->
+<!--          </thead>-->
+<!--          <tbody>-->
+<!--          {% for _ in range(3) %}-->
+<!--          <tr>-->
+<!--            <td>-->
+<!--              <p>Российская Федерация, Алтайский край</p>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--              <p>Замалиева Татьяна Александровна</p>-->
+<!--              <p>Замалиева Татьяна Александровна</p>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--              <p><span>Менеджер</span> ООО Сельхозтехника - основан в 2011</p>-->
+<!--              <p><span>Генеральный директор</span> ООО Автоград - основан в 2011</p>-->
+<!--            </td>-->
+<!--            <td><a href="#">agroliderr@mail.ru</a></td>-->
+<!--          </tr>-->
+<!--          {% endfor %}-->
+<!--          </tbody>-->
+<!--        </table>-->
+
         <button class="show-more-btn mt-5">Загрузить больше</button>
       </div>
 
-      <div class="mb-17.5">
-        <h4 class="-tracking-4 text-3xl font-semibold mb-5.5">Документы</h4>
-        <form class="relative border-b border-black/10 mb-7.5">
-          <button type="submit" class="absolute left-0 top-1/2 -translate-y-1/2 size-4.5">
-            <img src="./static/imgs/icons/loop.svg" alt="" width="18" height="18">
-          </button>
+      <div class="mb-10 lg:mb-17.5">
+        <h4 class="text-block-header font-semibold mb-5.5">Документы</h4>
 
-          <input type="text" placeholder="Поиск по материалам форума" class="pl-7 py-2.75 w-full placeholder:text-black text-xs"/>
-        </form>
-        <div class="space-y-2.5">
-          {% for _ in range(10) %}
-          <a href="#" class="flex items-center bg-white rounded-sm px-5 pb-4 pt-3.5 gap-x-5">
-            <img src="./static/imgs/icons/document-text.svg" alt="" class="shrink-0" width="32" height="32" />
-
-            <div class="tracking-1">
-              <p class="font-bold text-balance mb-0.5">Устав Всемирного конгресса татар</p>
-              <p class="font-medium text-xs">Файл PDF · 433,4 кб</p>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
+        {% include 'blocks/documents.html' %}
       </div>
 
-      <div>
-        <h4 class="-tracking-4 text-3xl font-semibold mb-7.5">Контакты</h4>
-        <div class="grid grid-cols-3 gap-x-5">
-          <div class="bg-white rounded-sm pt-5.75 p-7.5 min-h-82 flex flex-col">
-            <p class="text-xl font-medium text-accent">Связь</p>
-
-            <a href="tel:88432997717" class="mt-auto font-medium text-xl mb-1">8 843 299-77-17</a>
-            <span class="text-xs block text-thumb-button font-medium">Горячая линия</span>
-
-            <a href="mailto:tatforum2020@gmail.com" class="mt-6.75 font-medium text-xl mb-1">tatforum2020@gmail.com</a>
-            <span class="text-xs block text-thumb-button font-medium">Электронная почта</span>
-
-            <button class="mt-6.75 text-white show-more-btn bg-accent!">Сайт организации</button>
-          </div>
-
-          <div class="bg-white rounded-sm pt-5.75 p-7.5 min-h-82 flex flex-col">
-            <p class="text-xl font-medium text-accent">Адрес</p>
-
-            <p class="mt-13.75 text-xl font-medium">Казань, ул.Карла Маркса 38/5, III этаж, 304 каб.</p>
-
-            <span class="text-xs block text-thumb-button font-medium mt-8">Режим работы</span>
-            <span class="text-xs block text-thumb-button font-semibold mt-1.75">Пн - Сб с 10:00 до 19:00, Вс выходной</span>
-
-            <button class="show-more-btn bg-grey2! mt-auto">Проложить маршрут</button>
-          </div>
-
-          <div class="bg-red-400 rounded-sm relative min-h-82">
-            <button class="show-more-btn absolute z-1 bottom-7.5 inset-x-7.5 w-auto!">Открыть на карте</button>
-          </div>
-        </div>
-      </div>
+      {% include 'blocks/contacts-section.html' %}
     </div>
 
-    <div class="w-65 shrink-0 space-y-10">
+    <div class="w-65 shrink-0 space-y-10 max-lg:hidden">
       <div class="bg-white rounded-sm grid place-content-center aspect-square">
         <img src="./static/imgs/mocks/vftm.png" alt="" class="size-full object-contain" />
       </div>
@@ -212,8 +235,9 @@
   </div>
 </section>
 
-<section class="mb-27.5">
-  <h4 class="mb-7 text-3xl -tracking-4">Новости</h4>
+<section class="lg:mb-7.5">
+  <h4 class="mb-7 text-block-header">Новости</h4>
+
   {% include 'blocks/news-section.html' %}
 </section>
 

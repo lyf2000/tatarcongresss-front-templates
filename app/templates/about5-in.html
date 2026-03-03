@@ -96,7 +96,7 @@
             <img src="./static/imgs/mocks/8.png" alt="" class="object-cover size-full" />
           </a>
 
-          <div class="grow">
+          <div class="grow min-w-0">
             <p class="mb-1 lg:mb-1.25 font-semibold lg:text-xl">Хасанов Райнур Рауфович</p>
             <p class="font-medium text-xs lg:text-base">Председатель форума</p>
           </div>
@@ -164,35 +164,7 @@
         <a href="#" class="show-more-btn mt-5">Все медиа материалы</a>
       </div>
 
-      <h4 class="text-block-header font-semibold mb-7.5 mt-10 lg:mt-17.5">Контакты</h4>
-      <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-5">
-        <div class="bg-white rounded-sm p-3.5 lg:pt-5.75 lg:p-7.5 min-h-55 lg:min-h-82 flex flex-col">
-          <p class="text-xl font-medium text-accent">Связь</p>
-
-          <a href="tel:88432997717" class="mt-5 lg:mt-13.75 font-medium text-xl">8 843 299-77-17</a>
-          <span class="text-xs block text-thumb-button font-medium">Горячая линия</span>
-
-          <a href="mailto:tatforum2020@gmail.com" class="mt-6.75 font-medium text-xl mb-1">tatforum2020@gmail.com</a>
-          <span class="text-xs block text-thumb-button font-medium mb-2">Электронная почта</span>
-
-          <button class="mt-auto text-white show-more-btn bg-accent!">Сайт организации</button>
-        </div>
-
-        <div class="bg-white rounded-sm p-3.5 lg:pt-5.75 lg:p-7.5 min-h-55 lg:min-h-82 flex flex-col">
-          <p class="text-xl font-medium text-accent">Адрес</p>
-
-          <p class="mt-5 lg:mt-13.75 text-xl font-medium">Казань, ул.Карла Маркса 38/5, III этаж, 304 каб.</p>
-
-          <span class="text-xs block text-thumb-button font-medium mt-8">Режим работы</span>
-          <span class="text-xs block text-thumb-button font-semibold mb-2 mt-1.75">Пн - Сб с 10:00 до 19:00, Вс выходной</span>
-
-          <button class="show-more-btn bg-grey2! mt-auto">Проложить маршрут</button>
-        </div>
-
-        <div class="bg-red-400 rounded-sm relative min-h-55 lg:min-h-82 max-xl:col-span-full">
-          <button class="show-more-btn absolute z-1 bottom-7.5 inset-x-7.5 w-auto!">Открыть на карте</button>
-        </div>
-      </div>
+      {% include 'blocks/contacts-section.html' %}
     </div>
   </div>
 </section>
