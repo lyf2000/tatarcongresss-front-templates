@@ -3782,6 +3782,110 @@ button, textarea, input {
     }
   }
 }
+.forum-table {
+  width: calc(100% + 10px);
+  margin-left: -5px;
+  margin-right: -5px;
+  border-collapse: separate;
+  border-spacing: 5px 0;
+  th {
+    position: relative;
+    padding-bottom: calc(var(--spacing) * 2.75);
+    padding-left: calc(var(--spacing) * 5);
+    text-align: left;
+    font-size: var(--text-tiny);
+    line-height: var(--tw-leading, var(--text-tiny--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-thumb-button);
+    text-transform: uppercase;
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  td {
+    position: relative;
+    background-color: var(--color-white);
+    padding-inline: calc(var(--spacing) * 5);
+    padding-block: calc(var(--spacing) * 4.5);
+    vertical-align: top;
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    --tw-tracking: calc(var(--tracking-2) * -1);
+    letter-spacing: calc(var(--tracking-2) * -1);
+    &:after {
+      content: '';
+      position: absolute;
+      inset-inline: calc(var(--spacing) * 4.5);
+      top: calc(var(--spacing) * 0);
+      height: 1px;
+      background-color: color-mix(in srgb, #000 10%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
+      }
+    }
+  }
+  tr:not(.even) + tr.even, tr.even + tr:not(.even) {
+    td {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  tr {
+    &.even {
+      td {
+        background-color: transparent;
+      }
+    }
+    &:first-child {
+      td {
+        &:after {
+          display: none;
+        }
+      }
+    }
+    th, td {
+      &:before {
+        content: '';
+        position: absolute;
+        top: calc(var(--spacing) * 0);
+        bottom: calc(var(--spacing) * 0);
+        left: -2.5px;
+        width: 1px;
+        background-color: color-mix(in srgb, #B3B3B3 30%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-thumb-button) 30%, transparent);
+        }
+      }
+    }
+  }
+  .region {
+    max-width: calc(var(--spacing) * 49.5);
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    span {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+    &:before, &:after {
+      display: none;
+    }
+  }
+  .name {
+    max-width: calc(var(--spacing) * 49.5);
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .position {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+}
 .news-in-wrapper {
   anchor-name: --news-in-wrapper;
   .img {

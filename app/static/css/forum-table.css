@@ -1,0 +1,80 @@
+.forum-table {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    margin-right: -5px;
+    border-collapse: separate;
+    border-spacing: 5px 0;
+
+    th {
+        @apply uppercase text-tiny text-thumb-button pl-5 pb-2.75 font-bold text-left relative;
+
+        &:first-child {
+            &:before {
+                @apply hidden;
+            }
+        }
+    }
+
+    td {
+        @apply text-xs -tracking-2 font-medium align-top px-5 py-4.5 bg-white relative;
+
+        &:after {
+            content: '';
+            @apply absolute inset-x-4.5 top-0 h-px bg-black/10;
+        }
+    }
+
+    tr:not(.even) + tr.even,
+    tr.even + tr:not(.even) {
+        td {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    tr {
+        &.even {
+            td {
+                @apply bg-transparent;
+            }
+        }
+
+        &:first-child {
+            td {
+                &:after {
+                    @apply hidden;
+                }
+            }
+        }
+
+        th,
+        td {
+            &:before {
+                content: '';
+                @apply bg-thumb-button/30 w-px absolute top-0 bottom-0 left-[-2.5px];
+            }
+        }
+    }
+
+    .region {
+        @apply font-medium max-w-49.5;
+
+        span {
+            @apply font-semibold;
+        }
+
+        &:before,
+        &:after {
+            @apply hidden;
+        }
+    }
+
+    .name {
+        @apply font-bold max-w-49.5;
+    }
+
+    .position {
+        @apply font-semibold;
+    }
+}
