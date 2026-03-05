@@ -30,6 +30,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --tracking-normal: 0em;
     --radius-xs: 0.125rem;
     --radius-sm: 0.25rem;
     --aspect-video: 16 / 9;
@@ -348,6 +349,9 @@
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .ms-2 {
+    margin-inline-start: calc(var(--spacing) * 2);
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -855,6 +859,13 @@
   }
   .gap-7\.5 {
     gap: calc(var(--spacing) * 7.5);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-2\.5 {
     :where(& > :not(:last-child)) {
@@ -1382,6 +1393,10 @@
   .tracking-1 {
     --tw-tracking: var(--tracking-1);
     letter-spacing: var(--tracking-1);
+  }
+  .tracking-normal {
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
   .text-balance {
     text-wrap: balance;
