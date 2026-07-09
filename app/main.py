@@ -24,8 +24,8 @@ async def render_template(request: Request, file_path: str):
         file_path += ".html"
         
     template_path = os.path.join("app/templates", file_path)
-    
+    print(1111, request)
     if os.path.exists(template_path):
-        return templates.TemplateResponse(file_path, {"request": request})
+        return templates.TemplateResponse(request, file_path)
     
     return HTMLResponse(content="<h1>404 - Template Not Found</h1>", status_code=404)
